@@ -48,5 +48,19 @@ module.exports = {
         path: `${__dirname}/content/images`,
       },
     },
+    // Prefetch Google Fonts
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Lora`,
+            variants: [`500`, `700`],
+          },
+          { family: `Biryani`, variants: [`200`, `400`] },
+          { family: `Merriweather`, variants: [`300`] },
+        ],
+      },
+    },
   ],
 }
