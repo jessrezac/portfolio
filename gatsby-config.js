@@ -10,8 +10,8 @@ const infoData = require("./content/data/info.json")
 module.exports = {
   /* Your site config here */
   plugins: [
-    `gatsby-plugin-sass`,
     `gatsby-theme-tailwindcss`,
+    `gatsby-source-fontawesome`,
     /* Define filesystem */
     {
       resolve: "gatsby-source-filesystem",
@@ -57,7 +57,7 @@ module.exports = {
             family: `Lora`,
             variants: [`500`, `700`],
           },
-          { family: `Biryani`, variants: [`200`, `400`] },
+          { family: `Open Sans`, variants: [`300`, `400`] },
           { family: `Merriweather`, variants: [`300`] },
         ],
       },
