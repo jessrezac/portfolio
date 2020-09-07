@@ -1,11 +1,17 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
+import { faBars, faGem } from "@fortawesome/free-solid-svg-icons"
 import {
   faLinkedinIn,
   faTwitter,
   faDev,
+  faJs,
+  faHtml5,
+  faCss3Alt,
+  faSwift,
 } from "@fortawesome/free-brands-svg-icons"
+
+import headshot from "./../../content/images/jessrezac.jpg"
 
 export default function Home() {
   return (
@@ -19,7 +25,7 @@ export default function Home() {
             <FontAwesomeIcon icon={faBars} />
           </div>
         </div>
-        <div className="w-screen bg-baby-pink flex items-center justify-around text-l uppercase font-sans-300">
+        <div className="w-screen bg-baby-pink-300 flex items-center justify-around text-l uppercase font-sans-300">
           <a href="#" className="p-4">
             About
           </a>
@@ -60,19 +66,181 @@ export default function Home() {
           <div className="font-sans bold uppercase text-xs text-center">
             Take a deep breath
           </div>
-          Jess Rezac definitely knows who she is. Absolutely is not making it up
-          on the fly and copying from other people!
+          <div>
+            Jess Rezac definitely knows who she is. Absolutely is not making it
+            up on the fly and copying from other people!
+          </div>
         </div>
       </section>
 
-      <section className="flex justify-center items-center">
-        <div className="bg-azure-x rounded">Test</div>
+      <section className="flex flex-wrap-reverse md:flex-wrap items-center justify-center p-10">
+        <div className="w-full md:w-2/3 text-center p-10">
+          <h2 className="font-sans text-sans uppercase">Say Hello To</h2>
+          <div className="text-3xl font-display m-2">Jess Rezac</div>
+          <p className="leading-7 mb-2">
+            I’m a full-stack web developer with experience in Ruby and
+            Javascript and a background in digital communication strategy and
+            technology solutions for museums and schools. I possess strong
+            skills in systems thinking and project management helping
+            small-to-midsize businesses identify and implement smart, efficient
+            solutions.
+          </p>
+          <a className="rounded bg-morning-blue p-2" href="#">
+            About Me
+          </a>
+        </div>
+        <div className="w-full md:w-1/3 text-center p-10">
+          <img src={headshot} alt="" className="rounded shadowed" />
+        </div>
+      </section>
+
+      <section className="py-12">
+        <h2 className="text-display text-center text-4xl">Projects</h2>
+        <div className="flex flex-wrap justify-between items-center p-10">
+          <div className="bg-azure-x-100 max-w-sm rounded overflow-hidden shadow-lg mb-10  md:mb-0">
+            <div className="w-full bg-queen-blue">eventually a photo</div>
+            <div className="px-6 py-4">
+              <div className="font-sans uppercase font-bold text-xl mb-2 text-center">
+                Bout Manager
+              </div>
+              <div className="font-sans text-center mb-2">
+                <a href="#" className="shadowed">
+                  Github
+                </a>
+                &nbsp;&bull;&nbsp;
+                <a href="#" className="shadowed">
+                  Demo
+                </a>
+              </div>
+              <p className="text-gray-700 text-base leading-7">
+                A React application with a Rails API for managing slam poetry
+                bouts designed for Louder Than A Bomb.
+              </p>
+            </div>
+            <div className="px-6 pt-4 pb-2">
+              <span className="inline-block bg-light-coral text-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #photography
+              </span>
+              <span className="inline-block bg-light-coral text-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #travel
+              </span>
+              <span className="inline-block bg-light-coral text-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #winter
+              </span>
+            </div>
+          </div>
+
+          <div className="bg-azure-x-100 max-w-sm rounded overflow-hidden shadow-lg  mb-10  md:mb-0">
+            <div className="w-full bg-queen-blue">eventually a photo</div>
+            <div className="px-6 py-4">
+              <div className="font-sans uppercase font-bold text-xl mb-2 text-center">
+                Bout Manager
+              </div>
+              <div className="font-sans text-center mb-2">
+                <a href="#" className="shadowed">
+                  Github
+                </a>
+                &nbsp;&bull;&nbsp;
+                <a href="#" className="shadowed">
+                  Demo
+                </a>
+              </div>
+              <p className="text-gray-700 text-base leading-7">
+                A React application with a Rails API for managing slam poetry
+                bouts designed for Louder Than A Bomb.
+              </p>
+            </div>
+            <div className="px-6 pt-4 pb-2">
+              <span className="inline-block bg-light-coral text-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #photography
+              </span>
+              <span className="inline-block bg-light-coral text-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #travel
+              </span>
+              <span className="inline-block bg-light-coral text-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                <FontAwesomeIcon icon={faCss3Alt} /> Bulma
+              </span>
+            </div>
+          </div>
+
+          <div className="bg-azure-x-100 max-w-sm rounded overflow-hidden shadow-lg  mb-10 md:mb-0">
+            <div className="w-full bg-queen-blue">eventually a photo</div>
+            <div className="px-6 py-4">
+              <div className="font-sans uppercase font-bold text-xl mb-2 text-center">
+                Bout Manager
+              </div>
+              <div className="font-sans text-center mb-2">
+                <a href="#" className="shadowed">
+                  Github
+                </a>
+                &nbsp;&bull;&nbsp;
+                <a href="#" className="shadowed">
+                  Demo
+                </a>
+              </div>
+              <p className="text-gray-700 text-base leading-7">
+                A React application with a Rails API for managing slam poetry
+                bouts designed for Louder Than A Bomb.
+              </p>
+            </div>
+            <div className="px-6 pt-4 pb-2">
+              <span className="inline-block bg-light-coral text-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #photography
+              </span>
+              <span className="inline-block bg-light-coral text-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #travel
+              </span>
+              <span className="inline-block bg-light-coral text-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #winter
+              </span>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className="bg-watercolor-texture bg-cover p-10 w-screen flex items-center justify-center">
-        <div className="w-4/5 md:w-2/4 p-10 text-center text-5xl font-display">
+        <div className="w-4/5 md:w-2/4 p-10 text-center text-5xl text-display">
           Take a<br />
           deep breath.
+        </div>
+      </section>
+
+      <section id="skills" className="w-screen bg-queen-blue text-seashell">
+        <div className="flex items-start justify-evenly p-10 text-center">
+          <div className="flex-1 p-2">
+            <div className="text-5xl">
+              <FontAwesomeIcon icon={faGem} />
+            </div>
+            <div className="text-2xl">Ruby</div>
+            <p>Ruby, Ruby on Rails, Sinatra, API Creation</p>
+          </div>
+          <div className="flex-1 p-2">
+            <div className="text-5xl">
+              <FontAwesomeIcon icon={faJs} />
+            </div>
+            <div className="text-2xl">Javascript</div>
+            <p>ES6, React, Redux, Gatsby, API use</p>
+          </div>
+          <div className="flex-1 p-2">
+            <div className="text-5xl">
+              <FontAwesomeIcon icon={faHtml5} />
+            </div>
+            <div className="text-2xl">HTML</div>
+            <p>Wordpress, HTML5</p>
+          </div>
+          <div className="flex-1 p-2">
+            <div className="text-5xl">
+              <FontAwesomeIcon icon={faCss3Alt} />
+            </div>
+            <div className="text-2xl">CSS</div>
+            <p>CSS3, Tailwind, Bulma, Bootstrap</p>
+          </div>
+          <div className="flex-1 p-2">
+            <div className="text-5xl">
+              <FontAwesomeIcon icon={faSwift} />
+            </div>
+            <div className="text-2xl">Swift</div>
+          </div>
         </div>
       </section>
 
