@@ -67,8 +67,28 @@ export default function Home() {
             Take a deep breath
           </div>
           <div>
-            Jess Rezac definitely knows who she is. Absolutely is not making it
-            up on the fly and copying from other people!
+            I'm Jess, a full stack web developer with a background in digital
+            marketing and museums. See what I have to say about{" "}
+            <a href="#" className="shadowed">
+              coding
+            </a>
+            ,&nbsp;
+            <a href="#" className="shadowed">
+              anti-racism
+            </a>
+            ,&nbsp;
+            <a href="#" className="shadowed">
+              accessible design
+            </a>
+            ,&nbsp;
+            <a href="#" className="shadowed">
+              productivity
+            </a>
+            ,&nbsp;
+            <a href="#" className="shadowed">
+              digital wellness
+            </a>
+            &nbsp; and more.
           </div>
         </div>
       </section>
@@ -85,7 +105,7 @@ export default function Home() {
             small-to-midsize businesses identify and implement smart, efficient
             solutions.
           </p>
-          <a className="rounded bg-morning-blue p-2" href="#">
+          <a className="rounded bg-morning-blue p-2 m-4" href="#">
             About Me
           </a>
         </div>
@@ -95,7 +115,7 @@ export default function Home() {
       </section>
 
       <section className="py-12">
-        <h2 className="text-display text-center text-4xl">Projects</h2>
+        <h2 className="font-display text-center text-4xl">Projects</h2>
         <div className="flex flex-wrap justify-between items-center p-10">
           <div className="bg-azure-x-100 max-w-sm rounded overflow-hidden shadow-lg mb-10  md:mb-0">
             <div className="w-full bg-queen-blue">eventually a photo</div>
@@ -199,7 +219,7 @@ export default function Home() {
       </section>
 
       <section className="bg-watercolor-texture bg-cover p-10 w-screen flex items-center justify-center">
-        <div className="w-4/5 md:w-2/4 p-10 text-center text-5xl text-display">
+        <div className="w-4/5 md:w-2/4 p-10 text-center text-5xl font-display">
           Take a<br />
           deep breath.
         </div>
