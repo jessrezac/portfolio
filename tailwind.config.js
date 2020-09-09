@@ -39,4 +39,7 @@ module.exports = {
       addComponents(highlights)
     }),
   ],
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
 }

@@ -9,6 +9,11 @@ const infoData = require("./content/data/info.json")
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `Jess Rezac | Software Engineer`,
+    siteUrl: `https://www.rezac.dev`,
+    description: `Full-Stack Web Developer`,
+  },
   plugins: [
     `gatsby-theme-tailwindcss`,
     `gatsby-source-fontawesome`,
