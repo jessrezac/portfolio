@@ -17,6 +17,7 @@ module.exports = {
   plugins: [
     `gatsby-theme-tailwindcss`,
     `gatsby-source-fontawesome`,
+    `gatsby-plugin-react-helmet`,
     /* Define filesystem */
     {
       resolve: "gatsby-source-filesystem",
@@ -59,8 +60,8 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Lora`,
-            variants: [`500`, `700`],
+            family: `Trocchi`,
+            variants: [`400`],
           },
           { family: `Open Sans`, variants: [`300`, `400`] },
           { family: `Merriweather`, variants: [`300`] },

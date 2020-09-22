@@ -1,4 +1,6 @@
 import React from "react"
+import useSiteMetadata from "../static_queries/useSiteMetadata"
+import { Helmet } from "react-helmet"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faGem } from "@fortawesome/free-solid-svg-icons"
 import {
@@ -11,15 +13,23 @@ import {
   faSwift,
 } from "@fortawesome/free-brands-svg-icons"
 
+import Project from "../components/Project"
+
 import headshot from "./../../content/images/jessrezac.jpg"
 
 export default function Home() {
+  const { title, description } = useSiteMetadata()
   return (
     <>
+      <Helmet>
+        <html lang="en" />
+        <title>{title}</title>
+        <meta name="description" content={description} />
+      </Helmet>
       <header id="header">
         <div className="flex justify-between">
           <h1 className="text-4xl font-display p-6 pl-10" id="identity">
-            Jess Rezac
+            {title}
           </h1>
           <div className="text-2xl p-8" id="hamburger-menu">
             <FontAwesomeIcon icon={faBars} />
@@ -63,32 +73,43 @@ export default function Home() {
         style={{ height: "80vh" }}
       >
         <div className="bg-seashell w-4/5 md:w-2/4 p-10 rounded font-serif">
-          <div className="font-sans bold uppercase text-xs text-center">
-            Take a deep breath
+          <h2 className="font-sans text-sans uppercase text-center">
+            Say hello to
+          </h2>
+          <div className="text-3xl font-display m-2 text-center">
+            Jess Rezac
           </div>
-          <div>
-            I'm Jess, a full stack web developer with a background in digital
-            marketing and museums. See what I have to say about{" "}
+          <div className="font-sans bold text-s">
+            I'm a full stack <strong>software engineer</strong> who started
+            coding as a teenager who needed her online diary to have a certain
+            aesthetic. My career brought me back to web development when I
+            started asking <em>"How do you experience a museum digitally?"</em>{" "}
+            as Director of Digital Engagement at the American Jazz Museum in
+            Kansas City, Mo. See{" "}
+            <a href="#" className="shadowed">
+              how I got here
+            </a>{" "}
+            and then what I have to say about{" "}
             <a href="#" className="shadowed">
               coding
             </a>
-            ,&nbsp;
+            ,{" "}
             <a href="#" className="shadowed">
               anti-racism
             </a>
-            ,&nbsp;
+            ,{" "}
             <a href="#" className="shadowed">
               accessible design
             </a>
-            ,&nbsp;
+            ,{" "}
             <a href="#" className="shadowed">
               productivity
             </a>
-            ,&nbsp;
+            ,{" "}
             <a href="#" className="shadowed">
               digital wellness
-            </a>
-            &nbsp; and more.
+            </a>{" "}
+            and more.
           </div>
         </div>
       </section>
@@ -117,104 +138,7 @@ export default function Home() {
       <section className="py-12">
         <h2 className="font-display text-center text-4xl">Projects</h2>
         <div className="flex flex-wrap justify-between items-center p-10">
-          <div className="bg-azure-x-100 max-w-sm rounded overflow-hidden shadow-lg mb-10  md:mb-0">
-            <div className="w-full bg-queen-blue">eventually a photo</div>
-            <div className="px-6 py-4">
-              <div className="font-sans uppercase font-bold text-xl mb-2 text-center">
-                Bout Manager
-              </div>
-              <div className="font-sans text-center mb-2">
-                <a href="#" className="shadowed">
-                  Github
-                </a>
-                &nbsp;&bull;&nbsp;
-                <a href="#" className="shadowed">
-                  Demo
-                </a>
-              </div>
-              <p className="text-gray-700 text-base leading-7">
-                A React application with a Rails API for managing slam poetry
-                bouts designed for Louder Than A Bomb.
-              </p>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-light-coral text-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #photography
-              </span>
-              <span className="inline-block bg-light-coral text-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #travel
-              </span>
-              <span className="inline-block bg-light-coral text-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #winter
-              </span>
-            </div>
-          </div>
-
-          <div className="bg-azure-x-100 max-w-sm rounded overflow-hidden shadow-lg  mb-10  md:mb-0">
-            <div className="w-full bg-queen-blue">eventually a photo</div>
-            <div className="px-6 py-4">
-              <div className="font-sans uppercase font-bold text-xl mb-2 text-center">
-                Bout Manager
-              </div>
-              <div className="font-sans text-center mb-2">
-                <a href="#" className="shadowed">
-                  Github
-                </a>
-                &nbsp;&bull;&nbsp;
-                <a href="#" className="shadowed">
-                  Demo
-                </a>
-              </div>
-              <p className="text-gray-700 text-base leading-7">
-                A React application with a Rails API for managing slam poetry
-                bouts designed for Louder Than A Bomb.
-              </p>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-light-coral text-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #photography
-              </span>
-              <span className="inline-block bg-light-coral text-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #travel
-              </span>
-              <span className="inline-block bg-light-coral text-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                <FontAwesomeIcon icon={faCss3Alt} /> Bulma
-              </span>
-            </div>
-          </div>
-
-          <div className="bg-azure-x-100 max-w-sm rounded overflow-hidden shadow-lg  mb-10 md:mb-0">
-            <div className="w-full bg-queen-blue">eventually a photo</div>
-            <div className="px-6 py-4">
-              <div className="font-sans uppercase font-bold text-xl mb-2 text-center">
-                Bout Manager
-              </div>
-              <div className="font-sans text-center mb-2">
-                <a href="#" className="shadowed">
-                  Github
-                </a>
-                &nbsp;&bull;&nbsp;
-                <a href="#" className="shadowed">
-                  Demo
-                </a>
-              </div>
-              <p className="text-gray-700 text-base leading-7">
-                A React application with a Rails API for managing slam poetry
-                bouts designed for Louder Than A Bomb.
-              </p>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-light-coral text-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #photography
-              </span>
-              <span className="inline-block bg-light-coral text-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #travel
-              </span>
-              <span className="inline-block bg-light-coral text-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #winter
-              </span>
-            </div>
-          </div>
+          <Project />
         </div>
       </section>
 

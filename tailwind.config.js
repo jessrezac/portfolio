@@ -24,7 +24,7 @@ module.exports = {
     fontFamily: {
       sans: [`Open Sans`],
       serif: [`Merriweather`],
-      display: [`Lora`],
+      display: [`Trocchi`],
     },
   },
   variants: {},
