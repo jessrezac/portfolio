@@ -4,9 +4,6 @@ import { Helmet } from "react-helmet"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faGem } from "@fortawesome/free-solid-svg-icons"
 import {
-  faLinkedinIn,
-  faTwitter,
-  faDev,
   faJs,
   faHtml5,
   faCss3Alt,
@@ -14,6 +11,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 
 import Project from "../components/Project"
+import Header from "./../components/Header"
 
 import headshot from "./../../content/images/jessrezac.jpg"
 
@@ -26,48 +24,7 @@ export default function Home() {
         <title>{title}</title>
         <meta name="description" content={description} />
       </Helmet>
-      <header id="header">
-        <div className="flex justify-between">
-          <h1 className="text-4xl font-display p-6 pl-10" id="identity">
-            {title}
-          </h1>
-          <div className="text-2xl p-8" id="hamburger-menu">
-            <FontAwesomeIcon icon={faBars} />
-          </div>
-        </div>
-        <div className="w-screen bg-baby-pink-300 flex items-center justify-around text-l uppercase font-sans-300">
-          <a href="#" className="p-4">
-            About
-          </a>
-          <a href="#" className="p-4">
-            Projects
-          </a>
-          <a href="#" className="p-4">
-            Blog
-          </a>
-          <a href="#" className="p-4">
-            Contact
-          </a>
-          <div className="text-xl">
-            <a
-              href="https://www.linkedin.com/in/jessrezac"
-              className="m-2 text-l"
-            >
-              <FontAwesomeIcon icon={faLinkedinIn} />
-            </a>
-            <a href="https://dev.to/jessrezac" className="m-2 text-l">
-              <FontAwesomeIcon icon={faDev} />
-            </a>{" "}
-            <a
-              href="https://www.twitter.com/CheerUpEmoDev"
-              className="m-2 text-l"
-            >
-              <FontAwesomeIcon icon={faTwitter} />
-            </a>{" "}
-          </div>
-        </div>
-      </header>
-
+      <Header />
       <section
         className="bg-hero-collage bg-cover w-screen flex items-center justify-center"
         style={{ height: "80vh" }}
