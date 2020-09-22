@@ -3,11 +3,23 @@ const plugin = require("tailwindcss/plugin")
 module.exports = {
   purge: ["./src/**/*.html", "./src/**/*.vue", "./src/**/*.jsx"],
   theme: {
+    inset: {
+      "1/10": "10%",
+      "15": "15%",
+      "1/5": "20%",
+      "1/4": "25%",
+      "1/3": "33%",
+      "1/2": "50%",
+    },
     extend: {
       backgroundImage: theme => ({
         "hero-collage": "url('../../content/images/collage.png')",
         "watercolor-texture": "url('../../content/images/wctexture.png')",
       }),
+      spacing: {
+        "90vh": "90vh",
+        "80vh": "80vh",
+      },
     },
     colors: {
       seashell: "#FAF2EB",

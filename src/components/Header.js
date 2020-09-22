@@ -7,6 +7,8 @@ import { faBars } from "@fortawesome/free-solid-svg-icons"
 import Menu from "./../components/Menu"
 
 export default function Header(props) {
+  const { title, description } = useSiteMetadata()
+
   return (
     <header id="header">
       <div className="flex justify-between">
