@@ -18,7 +18,8 @@ import Menu from "./../components/Menu"
 import headshot from "./../../content/images/jessrezac.jpg"
 
 export default function Home() {
-  const { title, description } = useSiteMetadata()
+  const { title, description, infoData } = useSiteMetadata()
+  console.log(infoData)
   return (
     <>
       <Helmet>
@@ -36,60 +37,10 @@ export default function Home() {
             Jess Rezac
           </div>
           <div className="font-sans bold text-s">
-            I'm a full stack <strong>software engineer</strong> who started
-            coding as a teenager who needed her online diary to have a certain
-            aesthetic. My career brought me back to web development when I
-            started asking <em>"How do you experience a museum digitally?"</em>{" "}
-            as Director of Digital Engagement at the American Jazz Museum in
-            Kansas City, Mo. See{" "}
-            <a href="#" className="shadowed">
-              how I got here
-            </a>{" "}
-            and then what I have to say about{" "}
-            <a href="#" className="shadowed">
-              coding
-            </a>
-            ,{" "}
-            <a href="#" className="shadowed">
-              anti-racism
-            </a>
-            ,{" "}
-            <a href="#" className="shadowed">
-              accessible design
-            </a>
-            ,{" "}
-            <a href="#" className="shadowed">
-              productivity
-            </a>
-            ,{" "}
-            <a href="#" className="shadowed">
-              digital wellness
-            </a>{" "}
-            and more.
+            <div dangerouslySetInnerHTML={{ __html: infoData.bio }}></div>
           </div>
         </div>
         <div className="w-4/5 md:w-1/3 text-center p-10 lg:z-0 relative lg:absolute lg:bottom-1/4 lg:right-15">
-          <img src={headshot} alt="" className="rounded shadowed" />
-        </div>
-      </section>
-
-      <section className="flex flex-wrap-reverse md:flex-wrap items-center justify-center p-10">
-        <div className="w-full md:w-2/3 text-center p-10">
-          <h2 className="font-sans text-sans uppercase">Say Hello To</h2>
-          <div className="text-3xl font-display m-2">Jess Rezac</div>
-          <p className="leading-7 mb-2">
-            I’m a full-stack web developer with experience in Ruby and
-            Javascript and a background in digital communication strategy and
-            technology solutions for museums and schools. I possess strong
-            skills in systems thinking and project management helping
-            small-to-midsize businesses identify and implement smart, efficient
-            solutions.
-          </p>
-          <a className="rounded bg-morning-blue p-2 m-4" href="#">
-            About Me
-          </a>
-        </div>
-        <div className="w-full md:w-1/3 text-center p-10">
           <img src={headshot} alt="" className="rounded shadowed" />
         </div>
       </section>

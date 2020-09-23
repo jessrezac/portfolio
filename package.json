@@ -25,6 +25,7 @@
     "gatsby-source-filesystem": "^2.3.24",
     "gatsby-source-fontawesome": "0.0.1",
     "gatsby-theme-tailwindcss": "^1.1.0",
+    "gatsby-transformer-remark": "^2.8.35",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0"

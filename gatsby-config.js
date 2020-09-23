@@ -10,9 +10,12 @@ const infoData = require("./content/data/info.json")
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `Jess Rezac | Software Engineer`,
+    title: config.title,
     siteUrl: `https://www.rezac.dev`,
-    description: `Full-Stack Web Developer`,
+    description: config.description,
+    about: config.about,
+    contact: config.contact,
+    infoData: infoData,
   },
   plugins: [
     `gatsby-theme-tailwindcss`,
@@ -54,6 +57,9 @@ module.exports = {
         path: `${__dirname}/content/images`,
       },
     },
+    // Transform Markdown
+    `gatsby-transformer-remark`,
+
     // Prefetch Google Fonts
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,

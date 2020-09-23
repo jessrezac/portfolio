@@ -7,6 +7,14 @@ export default function useSiteMetadata() {
         siteMetadata {
           title
           description
+          infoData {
+            contact {
+              email
+              github_handle
+              twitter_handle
+            }
+            bio
+          }
         }
       }
     }
