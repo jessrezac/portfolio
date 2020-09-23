@@ -19,7 +19,6 @@ import headshot from "./../../content/images/jessrezac.jpg"
 
 export default function Home() {
   const { title, description, infoData } = useSiteMetadata()
-  console.log(infoData)
   return (
     <>
       <Helmet>

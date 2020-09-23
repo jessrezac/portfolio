@@ -36,6 +36,14 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
+
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "projects",
+        path: `${__dirname}/content/projects`,
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -57,9 +65,27 @@ module.exports = {
         path: `${__dirname}/content/images`,
       },
     },
+    // Transform images
+    `gatsby-image`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     // Transform Markdown
-    `gatsby-transformer-remark`,
-
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          "gatsby-remark-relative-images",
+          "gatsby-remark-normalize-paths",
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 1000,
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+      },
+    },
     // Prefetch Google Fonts
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
