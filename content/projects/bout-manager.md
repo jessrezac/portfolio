@@ -1,8 +1,9 @@
 ---
-date: 2020-09-22T19:57:00
+date: 2020-08-01T19:57:00
 title: Bout Manager
 author: Jess Rezac
+github_url: https://github.com/jessrezac/bout-manager
 hero_image: "/content/images/bout-manager.png"
 ---
 
-Then it is that I appreciate the beauty and the glory of architecture, which itself never turns in, but forever stands out and erect, keeping watch over the slumberers.
+A React app to manage slam poetry bouts for Louder Than A Bomb-Kansas City. Built with React and Redux with a Rails API.
