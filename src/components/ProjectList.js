@@ -9,7 +9,13 @@ import {
 
 export default function ProjectList(props) {
   let projects = useProjectData()
-  const [visibleProjects, setVisibleProjects] = useState([0, 1, 2])
+  let initialVisibleProjects = [0]
+
+  // get window size to determine number of visible projects to show
+  if (window.innerWidth > 640) {
+    initialVisibleProjects = [0, 1, 2]
+  }
+  const [visibleProjects, setVisibleProjects] = useState(initialVisibleProjects)
 
   function handleLeftArrowClick() {
     let adjustedProjects = [...visibleProjects]
@@ -46,7 +52,7 @@ export default function ProjectList(props) {
         ))}
       </div>
       <div className="flex flex-wrap justify-center p-10">
-        <div className="w-1/12 align-middle">
+        <div className="max-w-1/2 align-middle">
           <FontAwesomeIcon
             icon={faArrowCircleLeft}
             onClick={handleLeftArrowClick}
@@ -54,7 +60,7 @@ export default function ProjectList(props) {
           />
         </div>
 
-        <div className="w-1/12">
+        <div className="max-w-1/2">
           <FontAwesomeIcon
             icon={faArrowCircleRight}
             onClick={handleRightArrowClick}

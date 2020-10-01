@@ -12,6 +12,8 @@ export default function useProjectData() {
               author
               date(formatString: "MMMM Do, YYYY")
               title
+              github_url
+              demo_url
               hero_image {
                 childImageSharp {
                   fluid(maxWidth: 800) {
