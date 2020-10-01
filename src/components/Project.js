@@ -3,12 +3,7 @@ import useProjectData from "../static_queries/useProjectData"
 import Img from "gatsby-image"
 
 export default function Project(props) {
-  let projects = useProjectData()
-
-  // stub with just one project
-  let project = projects[0]
-  console.log(project)
-
+  let project = props.project
   return (
     <div className="bg-azure-x-100 max-w-sm rounded overflow-hidden shadow-lg mb-10  md:mb-0">
       <div className="w-full bg-queen-blue">

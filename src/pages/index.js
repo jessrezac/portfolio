@@ -10,7 +10,7 @@ import {
   faSwift,
 } from "@fortawesome/free-brands-svg-icons"
 
-import Project from "../components/Project"
+import ProjectList from "../components/ProjectList"
 import Header from "./../components/Header"
 
 import Menu from "./../components/Menu"
@@ -44,12 +44,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-12">
-        <h2 className="font-display text-center text-4xl">Projects</h2>
-        <div className="flex flex-wrap justify-between items-center p-10">
-          <Project />
-        </div>
-      </section>
+      <ProjectList />
 
       <section className="bg-watercolor-texture bg-cover p-10 w-screen flex items-center justify-center">
         <div className="w-4/5 md:w-2/4 p-10 text-center text-5xl font-display">
