@@ -11,12 +11,14 @@ export default function Header(props) {
   return (
     <header id="header" className="w-screen bg-baby-pink-300">
       <Menu />
-      <div className="px-10 pb-20">
-        <h1 className="text-6xl font-display pt-20" id="identity">
+      <div className="px-10 py-20">
+        <div className="font-sans text-sans uppercase">Say hello to</div>
+
+        <h1 className="text-6xl font-display" id="identity">
           {title}
         </h1>
         <div
-          className="font-sans text-l"
+          className="font-sans text-xl w-60"
           dangerouslySetInnerHTML={{ __html: infoData.bio }}
         ></div>
       </div>
