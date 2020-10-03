@@ -6,6 +6,9 @@
 
 const config = require("./config.json")
 const infoData = require("./content/data/info.json")
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 module.exports = {
   /* Your site config here */
@@ -98,6 +101,14 @@ module.exports = {
           { family: `Open Sans`, variants: [`300`, `400`] },
           { family: `Merriweather`, variants: [`300`] },
         ],
+      },
+    },
+    //Mailchimp Plugin
+    {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint: process.env.MAILCHIMP_ENDPOINT,
+        timeout: 3500,
       },
     },
   ],

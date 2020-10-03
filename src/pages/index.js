@@ -12,6 +12,7 @@ import {
 
 import ProjectList from "../components/ProjectList"
 import Header from "./../components/Header"
+import SignUpForm from "./../components/SignUpForm"
 
 import Menu from "./../components/Menu"
 
@@ -44,11 +45,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="-mt-20 p-10 relative z-10 object-center ">
-        <div className="bg-light-coral p-10 w-60 h-20 text-center m-auto">
-          Hi
-        </div>
-      </section>
+      <SignUpForm />
 
       <ProjectList />
 

@@ -2,24 +2,24 @@ import React from "react"
 import useSiteMetadata from "../static_queries/useSiteMetadata"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
 
 import Menu from "./../components/Menu"
 
 export default function Header(props) {
-  const { title, description } = useSiteMetadata()
+  const { title, infoData } = useSiteMetadata()
 
   return (
-    <header id="header">
-      <div className="flex justify-between">
-        <h1 className="text-4xl font-display p-6 pl-10" id="identity">
-          {title} | {description}
-        </h1>
-        <div className="text-2xl p-8" id="hamburger-menu">
-          <FontAwesomeIcon icon={faBars} />
-        </div>
-      </div>
+    <header id="header" className="w-screen bg-baby-pink-300">
       <Menu />
+      <div className="px-10 pb-20">
+        <h1 className="text-6xl font-display pt-20" id="identity">
+          {title}
+        </h1>
+        <div
+          className="font-sans text-l"
+          dangerouslySetInnerHTML={{ __html: infoData.bio }}
+        ></div>
+      </div>
     </header>
   )
 }

@@ -54,6 +54,12 @@ module.exports = {
         ".shadowed": {
           boxShadow: "inset 0 -0.50em #F6BD60",
         },
+        ".blue-shadowed": {
+          boxShadow: "inset 0 -0.50em #5d718b",
+        },
+        ".coral-shadowed": {
+          boxShadow: "inset 0 -0.50em #f28482",
+        },
       }
 
       addComponents(highlights)
