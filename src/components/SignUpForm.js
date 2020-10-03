@@ -22,17 +22,18 @@ export default function SignUpForm(props) {
   }
 
   return (
-    <section className="-mt-20 bg-morning-blue px-10 py-5 w-60 ml-auto mr-auto relative z-10 object-center text-azure-x-100">
-      <p className="font-sans bold py-2">
-        Twice a month, I curate a newsletter about coding with inspiration from{" "}
-        <span className="blue-shadowed font-bold">anti-racism</span>,{" "}
-        <span className="blue-shadowed font-bold">accessible design</span>,{" "}
-        <span className="blue-shadowed font-bold">productivity</span>,{" "}
-        <span className="blue-shadowed font-bold">online privacy</span>, and{" "}
-        <span className="blue-shadowed font-bold">digital wellness</span>.
+    <>
+      <h2 className="font-display text-center text-4xl py-5">Get to Know Me</h2>
+      <p className="font-sans text-xl pb-5">
+        Twice a month, I curate a newsletter about coding. Expect content about{" "}
+        <span className="shadowed font-bold">anti-racism</span>,{" "}
+        <span className="shadowed font-bold">accessible design</span>,{" "}
+        <span className="shadowed font-bold">productivity</span>,{" "}
+        <span className="shadowed font-bold">online privacy</span>, and{" "}
+        <span className="shadowed font-bold">digital wellness</span>.
       </p>
       <form onSubmit={handleSubmit}>
-        <div className="flex justify-between space-x-4">
+        <div className="flex flex-wrap xl:flex-no-wrap justify-between space-x-2">
           <input
             type="text"
             name="EMAIL"
@@ -70,6 +71,6 @@ export default function SignUpForm(props) {
           className="text-xs py-2"
         />
       )}{" "}
-    </section>
+    </>
   )
 }

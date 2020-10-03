@@ -44,9 +44,9 @@ export default function ProjectList(props) {
   }
 
   return (
-    <section className="py-12">
-      <h2 className="font-display text-center text-4xl">Projects</h2>
-      <div className="flex flex-wrap justify-between items-stretch p-10">
+    <section className="bg-max-yellow-red bg-cover w-screen py-20 flex flex-wrap items-center justify-center relative">
+      <h2 className="font-display text-center text-4xl py-5">Projects</h2>
+      <div className="flex flex-wrap justify-between items-stretch p-10 bg-cover">
         {visibleProjects.map(projectIndex => (
           <Project project={projects[projectIndex]} key={projectIndex} />
         ))}
