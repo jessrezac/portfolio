@@ -17,11 +17,11 @@ export default function Project(props) {
           {project.node.frontmatter.title}
         </div>
         <div className="font-sans text-center mb-2">
-          <a href={project.node.frontmatter.githubUrl} className="shadowed">
+          <a href={project.node.frontmatter.github_url} className="shadowed">
             Github
           </a>
           &nbsp;&bull;&nbsp;
-          <a href={project.node.frontmatter.demoUrl} className="shadowed">
+          <a href={project.node.frontmatter.demo_url} className="shadowed">
             Demo
           </a>
         </div>

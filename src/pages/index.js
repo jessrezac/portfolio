@@ -44,6 +44,12 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="-mt-20 p-10 relative z-10 object-center ">
+        <div className="bg-light-coral p-10 w-60 h-20 text-center m-auto">
+          Hi
+        </div>
+      </section>
+
       <ProjectList />
 
       <section className="bg-watercolor-texture bg-cover p-10 w-screen flex items-center justify-center">
