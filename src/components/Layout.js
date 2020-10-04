@@ -13,7 +13,7 @@ function Layout(props) {
         <title>{title}</title>
         <meta name="description" content={description} />
       </Helmet>
-      <Header logo={props.page === "home" ? "large" : "small"} />
+      <Header identity={props.page === "home" ? "large" : "small"} />
       {props.children}
     </>
   )

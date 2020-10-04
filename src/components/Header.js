@@ -11,19 +11,22 @@ export default function Header(props) {
 
   return (
     <header id="header" className="w-screen bg-baby-pink-300">
-      <Menu />
-      <div className="flex">
-        <div className="px-10 py-20">
-          <div className="font-sans text-sans uppercase">Say hello to</div>
-          <h1 className="text-6xl font-display" id="identity">
-            {title}
-          </h1>
-          <div
-            className="font-sans text-xl w-3/5"
-            dangerouslySetInnerHTML={{ __html: infoData.bio }}
-          ></div>
+      <Menu logoVisibility={props.identity === "large" ? "none" : "visible"} />
+      {props.identity === "large" && (
+        <div className="flex">
+          <div className="px-10 py-20">
+            <div className="font-sans text-sans uppercase">Say hello to</div>
+            <h1 className="text-6xl font-display" id="identity">
+              {title}
+            </h1>
+
+            <div
+              className="font-sans text-xl w-3/5"
+              dangerouslySetInnerHTML={{ __html: infoData.bio }}
+            ></div>
+          </div>
         </div>
-      </div>
+      )}
     </header>
   )
 }
