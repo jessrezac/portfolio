@@ -4,6 +4,7 @@ title: Card Trick
 author: Jess Rezac
 github_url: https://github.com/jessrezac/card-trick
 demo: https://www.loom.com/share/c7ef9ecf0ac647e8a5d34fec17b3b793
+posttype: project
 hero_image: "/content/images/card-trick.png"
 ---
 

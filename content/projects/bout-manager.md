@@ -4,6 +4,7 @@ title: Bout Manager
 author: Jess Rezac
 github_url: https://github.com/jessrezac/bout-manager
 demo_url: https://www.loom.com/share/17702c2e16444d7da725d4762fb57e39
+posttype: project
 hero_image: "/content/images/bout-manager.png"
 ---
 

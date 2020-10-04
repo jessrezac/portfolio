@@ -15,6 +15,7 @@ export default function ProjectList(props) {
   if (window.innerWidth > 640) {
     initialVisibleProjects = [0, 1, 2]
   }
+
   const [visibleProjects, setVisibleProjects] = useState(initialVisibleProjects)
 
   function handleLeftArrowClick() {

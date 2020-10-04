@@ -10,25 +10,22 @@ import {
   faSwift,
 } from "@fortawesome/free-brands-svg-icons"
 
+import Layout from "../components/Layout"
+import BlogList from "../components/BlogList"
 import ProjectList from "../components/ProjectList"
-import Header from "./../components/Header"
 import SignUpForm from "./../components/SignUpForm"
-
-import Menu from "./../components/Menu"
 
 import headshot from "./../../content/images/jessrezac.jpg"
 
 export default function Home() {
   const { title, description, infoData } = useSiteMetadata()
   return (
-    <>
+    <Layout page="home">
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
       </Helmet>
-
-      <Header />
 
       <section className="bg-hero-collage bg-cover w-screen pb-20 flex flex-wrap-reverse items-center justify-center relative md:h-80vh">
         <div className="bg-seashell w-4/5 md:w-2/4 p-10 rounded font-serif lg:z-10 relative lg:absolute lg:bottom-1/5 lg:left-1/10">
@@ -40,6 +37,8 @@ export default function Home() {
       </section>
 
       <ProjectList />
+
+      <BlogList />
 
       <section className="bg-watercolor-texture bg-cover p-10 w-screen flex items-center justify-center">
         <div className="w-4/5 md:w-2/4 p-10 text-center text-5xl font-display">
@@ -88,6 +87,6 @@ export default function Home() {
       </section>
 
       <footer className="bg-morning-blue h-100">Test</footer>
-    </>
+    </Layout>
   )
 }
