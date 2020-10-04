@@ -3,7 +3,9 @@ import { graphql, useStaticQuery } from "gatsby"
 export default function useProjectData() {
   const data = useStaticQuery(graphql`
     query getProjectData {
-      allMarkdownRemark {
+      allMarkdownRemark(
+        filter: { frontmatter: { posttype: { in: ["project"] } } }
+      ) {
         edges {
           node {
             id
