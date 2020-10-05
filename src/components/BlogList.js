@@ -4,7 +4,6 @@ import BlogPreview from "./BlogPreview"
 
 export default function BlogList(props) {
   let posts = useBlogData()
-  console.log(posts[0].node.id)
 
   return (
     <section className="bg-morning-blue text-seashell bg-cover w-screen py-20">

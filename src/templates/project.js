@@ -2,55 +2,64 @@ import React from "react"
 import Layout from "../components/Layout"
 import { graphql, Link } from "gatsby"
 import useProjectData from "../static_queries/useProjectData"
+import SignUpForm from "./../components/SignUpForm"
+
 import Img from "gatsby-image"
 
 export default function Project(props) {
-  const data = props.data.markdownRemark
+  const {
+    frontmatter,
+    excerpt,
+    html,
+    timeToRead,
+    wordCount,
+    fields,
+  } = props.data.markdownRemark
   const allProjectData = useProjectData()
-  // const nextSlug = getNextSlug(data.fields.slug)
+  const nextSlug = getNextSlug(fields.slug)
 
-  // function getNextSlug(slug) {
-  //   const allSlugs = allProjectData.map(blog => {
-  //     return blog.node.fields.slug
-  //   })
-  //   const nextSlug = allSlugs[allSlugs.indexOf(slug) + 1]
-  //   if (nextSlug !== undefined && nextSlug !== "") {
-  //     return nextSlug
-  //   } else {
-  //     return allSlugs[0]
-  //   }
-  // }
+  function getNextSlug(slug) {
+    const allSlugs = allProjectData.map(project => {
+      return project.node.fields.slug
+    })
+    const nextSlug = allSlugs[allSlugs.indexOf(slug) + 1]
+    if (nextSlug !== undefined && nextSlug !== "") {
+      return nextSlug
+    } else {
+      return allSlugs[0]
+    }
+  }
 
   return (
     <Layout>
       <article>
-        <figure>
-          <Img
-            fluid={data.frontmatter.hero_image.childImageSharp.fluid}
-            alt={data.frontmatter.title}
-          />
-        </figure>
-        <div>
-          <h1>{data.frontmatter.title}</h1>
-          <h3>{data.frontmatter.date}</h3>
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: data.html }}></div>
-        <div>
-          <h2>Written By: {data.frontmatter.author}</h2>
-          {/* <Link to={`blog/${nextSlug}`}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              version="1.1"
-              x="0px"
-              y="0px"
-              viewBox="0 0 26 26"
-              enableBackground="new 0 0 26 26"
-            >
-              <path d="M23.021,12.294l-8.714-8.715l-1.414,1.414l7.007,7.008H2.687v2h17.213l-7.007,7.006l1.414,1.414l8.714-8.713  C23.411,13.317,23.411,12.685,23.021,12.294z" />
-            </svg>
-          </Link> */}
+        <div className="py-20 w-3/5 mx-auto">
+          <figure>
+            <Img
+              fluid={frontmatter.hero_image.childImageSharp.fluid}
+              alt={frontmatter.title}
+            />
+          </figure>
+
+          <div>
+            <h1 className="text-6xl font-display py-2">{frontmatter.title}</h1>
+            <h2 className="font-sans text-2xl italic py-2">{excerpt}</h2>
+            <div className="font-sans uppercase text-xs py-2">
+              {frontmatter.date} &bull; {timeToRead} minute read &bull;{" "}
+              {wordCount.words} words
+            </div>
+          </div>
+          <div
+            className="text-l font-serif leading-8 my-20"
+            dangerouslySetInnerHTML={{ __html: html }}
+          ></div>
+          <Link to={`${nextSlug}`}>Next</Link>
         </div>
       </article>
+
+      <div className="bg-seashell w-3/5 p-10 mb-20 mx-auto rounded font-serif">
+        <SignUpForm />
+      </div>
     </Layout>
   )
 }
@@ -75,7 +84,12 @@ export const getProjectData = graphql`
           }
         }
       }
+      excerpt
       html
+      timeToRead
+      wordCount {
+        words
+      }
     }
   }
 `

@@ -25,6 +25,9 @@ export default function useProjectData() {
               }
             }
             html
+            fields {
+              slug
+            }
           }
         }
       }
