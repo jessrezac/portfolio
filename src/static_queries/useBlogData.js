@@ -9,6 +9,7 @@ export default function useBlogData() {
         edges {
           node {
             id
+            html
             excerpt(pruneLength: 200)
             frontmatter {
               author
@@ -22,8 +23,11 @@ export default function useBlogData() {
                 }
               }
             }
+            timeToRead
+            wordCount {
+              words
+            }
 
-            html
             fields {
               slug
             }
