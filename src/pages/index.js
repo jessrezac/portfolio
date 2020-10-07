@@ -1,14 +1,5 @@
 import React from "react"
 import useSiteMetadata from "../static_queries/useSiteMetadata"
-import { Helmet } from "react-helmet"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars, faGem } from "@fortawesome/free-solid-svg-icons"
-import {
-  faJs,
-  faHtml5,
-  faCss3Alt,
-  faSwift,
-} from "@fortawesome/free-brands-svg-icons"
 
 import Layout from "../components/Layout"
 import BlogList from "../components/BlogList"
