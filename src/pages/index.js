@@ -14,6 +14,7 @@ import Layout from "../components/Layout"
 import BlogList from "../components/BlogList"
 import ProjectList from "../components/ProjectList"
 import SignUpHero from "./../components/SignUpHero"
+import CallOutBanner from "./../components/CallOutBanner"
 
 export default function Home() {
   const { title, description, infoData } = useSiteMetadata()
@@ -25,12 +26,7 @@ export default function Home() {
 
       <BlogList />
 
-      <section className="bg-watercolor-texture bg-cover p-10 w-screen flex items-center justify-center">
-        <div className="w-4/5 md:w-2/4 p-10 text-center text-5xl font-display">
-          Take a<br />
-          deep breath.
-        </div>
-      </section>
+      <CallOutBanner />
 
       <section id="skills" className="w-screen bg-queen-blue text-seashell">
         <div className="flex items-start justify-evenly p-10 text-center">
