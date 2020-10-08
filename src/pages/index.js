@@ -11,7 +11,7 @@ import SkillsList from "./../components/SkillsList"
 export default function Home() {
   const { title, description, infoData } = useSiteMetadata()
   return (
-    <Layout page="home">
+    <Layout page="home" title={title} description={description}>
       <SignUpHero />
 
       <ProjectList />

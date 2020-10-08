@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet"
 import Header from "./Header"
 
 function Layout(props) {
-  const { title, description } = useSiteMetadata()
+  const { title, description } = props
 
   return (
     <>
