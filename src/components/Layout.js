@@ -2,6 +2,7 @@ import React from "react"
 import useSiteMetadata from "../static_queries/useSiteMetadata"
 import { Helmet } from "react-helmet"
 import Header from "./Header"
+import Footer from "./Footer"
 
 function Layout(props) {
   const { title, description } = props
@@ -18,6 +19,7 @@ function Layout(props) {
       </Helmet>
       <Header identity={props.page === "home" ? "large" : "small"} />
       {props.children}
+      <Footer />
     </>
   )
 }

@@ -21,8 +21,6 @@ export default function Home() {
       <CallOutBanner />
 
       <SkillsList />
-
-      <footer className="bg-morning-blue h-100">Test</footer>
     </Layout>
   )
 }
