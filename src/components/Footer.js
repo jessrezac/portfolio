@@ -4,6 +4,7 @@ import {
   faLinkedinIn,
   faTwitter,
   faDev,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons"
 
 import logo from "./../../content/images/rezac.png"
@@ -11,38 +12,30 @@ import logo from "./../../content/images/rezac.png"
 function Footer(props) {
   const { siteTitle, siteDescription } = props
   return (
-    <footer className="bg-baby-pink-100">
-      <div className="flex items-center justify-between max-w-screen-xl mx-auto py-20">
+    <footer className="bg-baby-pink-300 py-10">
+      <div className="flex justify-around align-center max-w-screen-xl mx-auto">
         <div>
-          <p>
-            <a href="#" className="font-display capitalize text-xl">
-              <img src={logo} alt="" className="w-1/5" />
-            </a>
-          </p>
-          <p>{siteDescription}</p>
+          <img src={logo} alt={siteTitle} className="w-2/5" />
+          <p className="font-display text-lg">{siteDescription}</p>
           <p>
             <a href="jess@rezac.dev" className="underline">
-              Email Me
-            </a>
+              hello@rezac.dev
+            </a>{" "}
+            &#9642; (816) 775-0084‬ &#9642; Kansas City, Mo.
           </p>
         </div>
-        <div className="flex items-center justify-right space-x-12 text-blue-yonder">
-          <div className="text-5xl">
+        <div>
+          <div className="flex items-center justify-center space-x-12 py-5 text-blue-yonder mx-auto text-6xl">
+            <FontAwesomeIcon icon={faGithub} />
             <FontAwesomeIcon icon={faLinkedinIn} />
-          </div>
-
-          <div className="text-5xl">
             <FontAwesomeIcon icon={faTwitter} />
-          </div>
-
-          <div className="text-5xl">
             <FontAwesomeIcon icon={faDev} />
           </div>
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto text-center pb-10">
+      <div className="max-w-screen-xl mx-auto text-center">
         <p>
-          &copy; Jess Rezac, 2020 /{" "}
+          &copy; Jess Rezac, 2020 &#9642;{" "}
           <a
             href="https://www.privacypolicyonline.com/live.php?token=1JJMUaEpCPRv1YgdD64VrfuMVvWKCcvf"
             className="underline"
