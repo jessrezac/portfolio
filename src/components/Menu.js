@@ -17,7 +17,7 @@ export default function Menu(props) {
       <div>
         <a
           href="#"
-          className={`p-4 font-display align-left capitalize text-xl transition-all duration-500 ease-in-out ${
+          className={`p-4 font-display align-left capitalize text-xl ${
             props.logoVisibility === "none" ? "invisible" : "visible"
           }`}
         >

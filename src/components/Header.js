@@ -3,7 +3,6 @@ import useSiteMetadata from "../static_queries/useSiteMetadata"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import headshot from "./../../content/images/jessrezac.jpg"
 import Menu from "./../components/Menu"
 
 export default function Header(props) {
@@ -11,7 +10,10 @@ export default function Header(props) {
 
   return (
     <header id="header" className="w-screen bg-baby-pink-300">
-      <Menu logoVisibility={props.identity === "large" ? "none" : "visible"} />
+      <Menu
+        siteTitle={title}
+        logoVisibility={props.identity === "large" ? "none" : "visible"}
+      />
       {props.identity === "large" && (
         <div className="flex">
           <div className="px-10 py-20">
