@@ -7,6 +7,7 @@ import Footer from "./Footer"
 function Layout(props) {
   const { title, description } = props
   const siteTitle = useSiteMetadata().title
+  const siteDescription = useSiteMetadata().description
 
   return (
     <>
@@ -17,9 +18,12 @@ function Layout(props) {
         </title>
         <meta name="description" content={description} />
       </Helmet>
-      <Header identity={props.page === "home" ? "large" : "small"} />
+      <Header
+        siteTitle={siteTitle}
+        identity={props.page === "home" ? "large" : "small"}
+      />
       {props.children}
-      <Footer />
+      <Footer siteTitle={siteTitle} siteDescription={siteDescription} />
     </>
   )
 }

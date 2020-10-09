@@ -1,6 +1,5 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import useSiteMetadata from "../static_queries/useSiteMetadata"
 
 import {
   faLinkedinIn,
@@ -11,7 +10,7 @@ import {
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 
 export default function Menu(props) {
-  const { title } = useSiteMetadata()
+  const { siteTitle } = props
 
   return (
     <div className="flex items-center justify-between">
@@ -22,7 +21,7 @@ export default function Menu(props) {
             props.logoVisibility === "none" ? "invisible" : "visible"
           }`}
         >
-          {title}
+          {siteTitle}
         </a>
       </div>
       <div className="flex items-center justify-around text-l uppercase font-sans-300 space-x-10">

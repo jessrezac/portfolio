@@ -18,9 +18,9 @@ export default function Home() {
 
       <BlogList />
 
-      <CallOutBanner />
-
       <SkillsList />
+
+      <CallOutBanner />
     </Layout>
   )
 }
