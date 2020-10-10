@@ -2,12 +2,13 @@ import React from "react"
 
 import Socials from "./Socials"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
+import logo from "./../../content/images/rezac.png"
 
 export default function Menu(props) {
   const { siteTitle } = props
 
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between max-w-screen-xl mx-auto">
       <div>
         <a
           href="#"
@@ -15,7 +16,12 @@ export default function Menu(props) {
             props.logoVisibility === "none" ? "invisible" : "visible"
           }`}
         >
-          {siteTitle}
+          <img
+            src={logo}
+            alt={`${siteTitle} logo`}
+            title={siteTitle}
+            className="h-6 px-5"
+          />
         </a>
       </div>
       <div className="flex items-center justify-around text-l uppercase font-sans-300 space-x-10">

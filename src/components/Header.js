@@ -9,7 +9,14 @@ export default function Header(props) {
   const { title, infoData } = useSiteMetadata()
 
   return (
-    <header id="header" className="w-screen bg-baby-pink-300">
+    <header
+      id="header"
+      className={`w-screen ${
+        props.identity !== "large"
+          ? "bg-gray-800 text-baby-pink-300"
+          : "bg-baby-pink-300"
+      }`}
+    >
       <Menu
         siteTitle={title}
         logoVisibility={props.identity === "large" ? "none" : "visible"}
