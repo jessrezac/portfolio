@@ -1,11 +1,5 @@
 import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faLinkedinIn,
-  faTwitter,
-  faDev,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons"
+import Socials from "./Socials"
 
 import logo from "./../../content/images/rezac.png"
 
@@ -26,10 +20,7 @@ function Footer(props) {
         </div>
         <div>
           <div className="flex items-center justify-center space-x-12 py-5 text-blue-yonder mx-auto text-6xl">
-            <FontAwesomeIcon icon={faGithub} />
-            <FontAwesomeIcon icon={faLinkedinIn} />
-            <FontAwesomeIcon icon={faTwitter} />
-            <FontAwesomeIcon icon={faDev} />
+            <Socials />
           </div>
         </div>
       </div>
