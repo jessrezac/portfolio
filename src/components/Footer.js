@@ -12,10 +12,10 @@ function Footer(props) {
           <img src={logo} alt={siteTitle} className="w-2/5" />
           <p className="font-display text-lg">{siteDescription}</p>
           <p>
-            <a href="jess@rezac.dev" className="underline">
+            <a href="hello@rezac.dev" className="underline">
               hello@rezac.dev
             </a>{" "}
-            &#9642; (816) 775-0084‬ &#9642; Kansas City, Mo.
+            &bull; (816) 775-0084‬ &bull; Kansas City, Mo.
           </p>
         </div>
         <div>
@@ -24,9 +24,9 @@ function Footer(props) {
           </div>
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto text-center">
+      <div className="max-w-screen-xl mx-auto text-center text-xs">
         <p>
-          &copy; Jess Rezac, 2020 &#9642;{" "}
+          &copy; Jess Rezac, 2020 &bull;{" "}
           <a
             href="https://www.privacypolicyonline.com/live.php?token=1JJMUaEpCPRv1YgdD64VrfuMVvWKCcvf"
             className="underline"
