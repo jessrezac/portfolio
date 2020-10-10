@@ -1,28 +1,21 @@
 import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import useSiteMetadata from "../static_queries/useSiteMetadata"
 
-import {
-  faLinkedinIn,
-  faTwitter,
-  faDev,
-} from "@fortawesome/free-brands-svg-icons"
-
+import Socials from "./Socials"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 
 export default function Menu(props) {
-  const { title } = useSiteMetadata()
+  const { siteTitle } = props
 
   return (
     <div className="flex items-center justify-between">
       <div>
         <a
           href="#"
-          className={`p-4 font-display align-left capitalize text-xl transition-all duration-500 ease-in-out ${
+          className={`p-4 font-display align-left capitalize text-xl ${
             props.logoVisibility === "none" ? "invisible" : "visible"
           }`}
         >
-          {title}
+          {siteTitle}
         </a>
       </div>
       <div className="flex items-center justify-around text-l uppercase font-sans-300 space-x-10">
@@ -38,25 +31,8 @@ export default function Menu(props) {
         <a href="#" className="p-4">
           Contact
         </a>
-        <div className="text-xl">
-          <a
-            href="https://www.linkedin.com/in/jessrezac"
-            className="m-2 text-l"
-          >
-            <FontAwesomeIcon icon={faLinkedinIn} />
-          </a>
-          <a href="https://dev.to/jessrezac" className="m-2 text-l">
-            <FontAwesomeIcon icon={faDev} />
-          </a>{" "}
-          <a
-            href="https://www.twitter.com/CheerUpEmoDev"
-            className="m-2 text-l"
-          >
-            <FontAwesomeIcon icon={faTwitter} />
-          </a>{" "}
-          <a href="#" className="text-2xl p-6" id="hamburger-menu">
-            <FontAwesomeIcon icon={faBars} />
-          </a>
+        <div className="text-xl flex justify-right space-x-6 pr-5">
+          <Socials />
         </div>
       </div>
     </div>
