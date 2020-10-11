@@ -31,13 +31,8 @@ export default function Menu(props) {
         <FontAwesomeIcon icon={faBars} className="" />
       </button>
       <div
-        className={`flex-col md:flex-row justify-around items-right p-4 md:items-center text-l uppercase font-sans-300 md:space-x-4 lg:space-x-10
-        
-        ${
-          isOpen
-            ? "flex fixed text-right top-0 right-0 z-10 bg-light-coral text-seashell h-screen w-screen"
-            : "hidden md:flex"
-        }`}
+        className={`flex flex-col fixed font-black md:font-normal top-0 md:top-auto right-0 md:right-auto md:relative md:flex-row justify-around items-center px-4 py-20 md:p-4 text-xl md:text-l uppercase font-sans-300 md:space-x-4 lg:space-x-10 bg-light-coral md:bg-transparent text-seashell md:text-baby-pink-300 h-screen md:h-auto w-screen md:w-auto
+        ${isOpen ? "z-10" : "hidden md:flex"}`}
       >
         <a href="#" className="p-4">
           About
@@ -51,7 +46,7 @@ export default function Menu(props) {
         <a href="#" className="p-4">
           Contact
         </a>
-        <div className="text-xl flex justify-around space-x-6 pr-5">
+        <div className="text-4xl md:text-xl flex justify-around space-x-6 pr-5">
           <Socials />
         </div>
       </div>
