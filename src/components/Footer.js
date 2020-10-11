@@ -6,10 +6,10 @@ import logo from "./../../content/images/rezac.png"
 function Footer(props) {
   const { siteTitle, siteDescription } = props
   return (
-    <footer className="bg-gray-800 text-baby-pink-300 py-10">
-      <div className="flex justify-around items-center max-w-screen-xl mx-auto">
-        <div>
-          <img src={logo} alt={siteTitle} className="w-2/5" />
+    <footer className="bg-gray-800 text-baby-pink-300 p-10 xl:px-0">
+      <div className="flex flex-wrap md:flex-no-wrap justify-around items-center max-w-screen-xl mx-auto">
+        <div className="pb-10 md:py-0 text-center md:text-left">
+          <img src={logo} alt={siteTitle} className="w-2/5 mx-auto md:mx-0" />
           <p className="font-display text-lg">{siteDescription}</p>
           <p>
             <a href="hello@rezac.dev" className="underline">
