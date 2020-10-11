@@ -34,7 +34,7 @@ export default function Menu(props) {
         className={`flex text-l uppercase font-sans-300 space-x-10 ${
           isOpen
             ? "flex-col justify-around items-right fixed text-right top-0 right-0 z-0 pt-20 pr-20 bg-light-coral text-seashell h-screen w-full"
-            : "hidden md:block md:flex-row md:justify-between items-center"
+            : "hidden md:block md:items-center md:justify-around md:flex-no-wrap md:relative"
         }`}
       >
         <a href="#" className="p-4">
