@@ -63,7 +63,83 @@ module.exports = {
         },
       }
 
-      addComponents(highlights)
+      const posts = {
+        "#postHtml p": {
+          display: "block",
+          "margin-top": "1em",
+          "margin-bottom": "1em",
+          "margin-left": "0",
+          "margin-right": "0",
+        },
+
+        "#postHtml h1": {
+          display: "block",
+          "font-size": "2em",
+          "margin-top": "0.67em",
+          "margin-bottom": "0.67em",
+          "margin-left": "0",
+          "margin-right": "0",
+          "font-weight": "bold",
+          "font-family": "Trocchi, serif",
+        },
+
+        "#postHtml h2": {
+          display: "block",
+          "font-size": "1.5em",
+          "margin-top": "0.83em",
+          "margin-bottom": "0.83em",
+          "margin-left": "0",
+          "margin-right": "0",
+          "font-weight": "bold",
+          "font-family": "Trocchi, serif",
+        },
+
+        "#postHtml h3": {
+          display: "block",
+          "font-size": "1.17em",
+          "margin-top": "1em",
+          "margin-bottom": "1em",
+          "margin-left": "0",
+          "margin-right": "0",
+          "font-weight": "bold",
+          "font-family": "Trocchi, serif",
+        },
+
+        "#postHtml h4": {
+          display: "block",
+          "font-size": "1.33em",
+          "margin-top": "1.33em",
+          "margin-bottom": "1.33em",
+          "margin-left": "0",
+          "margin-right": "0",
+          "font-weight": "bold",
+          "font-family": "Trocchi, serif",
+        },
+
+        "#postHtml h5": {
+          display: "block",
+          "font-size": "0.83em",
+          "margin-top": "1.67em",
+          "margin-bottom": "1.67em",
+          "margin-left": "0",
+          "margin-right": "0",
+          "font-weight": "bold",
+          "font-family": "Trocchi, serif",
+        },
+
+        "#postHtml h6": {
+          display: "block",
+          "font-size": "0.67em",
+          "margin-top": "2.33em",
+          "margin-bottom": "2.33em",
+          "margin-left": "0",
+          "margin-right": "0",
+          "font-weight": "bold",
+          "font-family": "Trocchi, serif",
+        },
+      }
+
+      addComponents([highlights, posts])
     }),
   ],
   future: {

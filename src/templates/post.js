@@ -1,81 +1,131 @@
-// import React from "react"
-// import Layout from "../components/Layout"
-// import { graphql, Link } from "gatsby"
-// import useBlogData from "../static_queries/useBlogData"
-// import Img from "gatsby-image"
+import React from "react"
+import Layout from "../components/Layout"
+import { graphql, Link } from "gatsby"
+import useBlogData from "../static_queries/useBlogData"
+import SignUpForm from "./../components/SignUpForm"
 
-// export default function Blog(props) {
-//   const data = props.data.markdownRemark
-//   const allBlogData = useBlogData()
-//   const nextSlug = getNextSlug(data.fields.slug)
+import Img from "gatsby-image"
 
-//   function getNextSlug(slug) {
-//     const allSlugs = allBlogData.map(blog => {
-//       return blog.node.fields.slug
-//     })
-//     const nextSlug = allSlugs[allSlugs.indexOf(slug) + 1]
-//     if (nextSlug !== undefined && nextSlug !== "") {
-//       return nextSlug
-//     } else {
-//       return allSlugs[0]
-//     }
-//   }
+export default function Post(props) {
+  const {
+    frontmatter,
+    excerpt,
+    html,
+    timeToRead,
+    wordCount,
+    fields,
+  } = props.data.markdownRemark
 
-//   return (
-//     <Layout>
-//       <article>
-//         <figure>
-//           <Img
-//             fluid={data.frontmatter.hero_image.childImageSharp.fluid}
-//             alt={data.frontmatter.title}
-//           />
-//         </figure>
-//         <div>
-//           <h1>{data.frontmatter.title}</h1>
-//           <h3>{data.frontmatter.date}</h3>
-//         </div>
-//         <div dangerouslySetInnerHTML={{ __html: data.html }}></div>
-//         <div>
-//           <h2>Written By: {data.frontmatter.author}</h2>
-//           <Link to={`blog/${nextSlug}`}>
-//             <svg
-//               xmlns="http://www.w3.org/2000/svg"
-//               version="1.1"
-//               x="0px"
-//               y="0px"
-//               viewBox="0 0 26 26"
-//               enableBackground="new 0 0 26 26"
-//             >
-//               <path d="M23.021,12.294l-8.714-8.715l-1.414,1.414l7.007,7.008H2.687v2h17.213l-7.007,7.006l1.414,1.414l8.714-8.713  C23.411,13.317,23.411,12.685,23.021,12.294z" />
-//             </svg>
-//           </Link>
-//         </div>
-//       </article>
-//     </Layout>
-//   )
-// }
+  console.log(frontmatter)
+  const allBlogData = useBlogData()
+  const nextPost = getNextPost(fields.slug)
+  const prevPost = getPrevPost(fields.slug)
 
-// //dynamic page query, must occur within each post context
-// //$slug is made available by context from createPages call in gatsby-node.js
-// export const getPostData = graphql`
-//   query($slug: String!) {
-//     markdownRemark(fields: { slug: { eq: $slug } }) {
-//       fields {
-//         slug
-//       }
-//       frontmatter {
-//         title
-//         author
-//         date(formatString: "MMMM Do, YYYY")
-//         hero_image {
-//           childImageSharp {
-//             fluid(maxWidth: 1500) {
-//               ...GatsbyImageSharpFluid
-//             }
-//           }
-//         }
-//       }
-//       html
-//     }
-//   }
-// `
+  function getNextPost(slug) {
+    const nextPost =
+      allBlogData[
+        allBlogData
+          .map(post => {
+            return post.node.fields.slug
+          })
+          .indexOf(slug) + 1
+      ]
+    if (nextPost && nextPost.node.fields.slug !== undefined) {
+      return nextPost
+    } else {
+      return allBlogData[0]
+    }
+  }
+
+  function getPrevPost(slug) {
+    const prevPost =
+      allBlogData[
+        allBlogData
+          .map(post => {
+            return post.node.fields.slug
+          })
+          .indexOf(slug) - 1
+      ]
+    if (prevPost && prevPost.node.fields.slug !== undefined) {
+      return prevPost
+    } else {
+      return allBlogData[allBlogData.length - 1]
+    }
+  }
+
+  return (
+    <Layout>
+      <article>
+        <div className="py-20 w-full md:px-10 lg:px-20 max-w-screen-xl mx-auto">
+          <figure>
+            <Img
+              fluid={frontmatter.hero_image.childImageSharp.fluid}
+              alt={frontmatter.title}
+            />
+          </figure>
+
+          <div>
+            <h1 className="text-6xl font-display py-2">{frontmatter.title}</h1>
+            <h2 className="font-sans text-2xl italic py-2">{excerpt}</h2>
+            <div className="font-sans uppercase text-xs py-2">
+              {frontmatter.date} &bull; {timeToRead} minute read &bull;{" "}
+              {wordCount.words} words
+            </div>
+            <div className="btn-blue">Test</div>
+          </div>
+          <div
+            id="postHtml"
+            className="text-l font-serif leading-8 my-20"
+            dangerouslySetInnerHTML={{ __html: html }}
+          ></div>
+          <div className="w-full flex justify-between items-center">
+            {prevPost && (
+              <Link to={`${prevPost.node.fields.slug}`}>
+                &larr; {prevPost.node.frontmatter.title}
+              </Link>
+            )}
+
+            {nextPost && (
+              <Link to={`${nextPost.node.fields.slug}`}>
+                {nextPost.node.frontmatter.title} &rarr;
+              </Link>
+            )}
+          </div>
+        </div>
+      </article>
+      <div className="bg-seashell w-3/5 p-10 mb-20 mx-auto rounded font-serif">
+        <SignUpForm />
+      </div>
+    </Layout>
+  )
+}
+
+//dynamic page query, must occur within each post context
+//$slug is made available by context from createPages call in gatsby-node.js
+export const getPostData = graphql`
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+        author
+        date(formatString: "MMMM Do, YYYY")
+        hero_image {
+          childImageSharp {
+            fluid(maxWidth: 1500) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+      excerpt
+      html
+      timeToRead
+      wordCount {
+        words
+      }
+    }
+  }
+`

@@ -71,6 +71,7 @@ export default function Project(props) {
             </div>
           </div>
           <div
+            id="projectHtml"
             className="text-l font-serif leading-8 my-20"
             dangerouslySetInnerHTML={{ __html: html }}
           ></div>
