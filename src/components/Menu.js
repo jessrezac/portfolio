@@ -31,7 +31,7 @@ export default function Menu(props) {
         <FontAwesomeIcon icon={faBars} className="" />
       </button>
       <div
-        className={`flex-col md:flex-row justify-around items-right p-4 md:items-center text-l uppercase font-sans-300 space-x-10
+        className={`flex-col md:flex-row justify-around items-right p-4 md:items-center text-l uppercase font-sans-300 md:space-x-4 lg:space-x-10
         
         ${
           isOpen
