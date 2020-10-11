@@ -28,10 +28,7 @@ export default function Project(props) {
           })
           .indexOf(slug) + 1
       ]
-    if (
-      nextProject.node.fields.slug !== undefined &&
-      nextProject.node.fields.slug !== ""
-    ) {
+    if (nextProject && nextProject.node.fields.slug !== undefined) {
       return nextProject
     } else {
       return allProjectData[0]
@@ -47,10 +44,7 @@ export default function Project(props) {
           })
           .indexOf(slug) - 1
       ]
-    if (
-      prevProject.node.fields.slug !== undefined &&
-      prevProject.node.fields.slug !== ""
-    ) {
+    if (prevProject && prevProject.node.fields.slug !== undefined) {
       return prevProject
     } else {
       return allProjectData[allProjectData.length - 1]
