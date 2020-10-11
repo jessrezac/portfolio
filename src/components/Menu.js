@@ -31,10 +31,12 @@ export default function Menu(props) {
         <FontAwesomeIcon icon={faBars} className="" />
       </button>
       <div
-        className={`flex text-l uppercase font-sans-300 space-x-10 ${
+        className={`flex flex-col md:flex-row justify-around items-right md:items-center text-l uppercase font-sans-300 space-x-10
+        
+        ${
           isOpen
-            ? "flex-col justify-around items-right fixed text-right top-0 right-0 z-0 pt-20 pr-20 bg-light-coral text-seashell h-screen w-full"
-            : "hidden md:block md:items-center md:justify-around md:flex-no-wrap md:relative"
+            ? "fixed text-right top-0 right-0 z-0 pt-20 pr-20 bg-light-coral text-seashell h-screen w-full"
+            : "invisible md:visible"
         }`}
       >
         <a href="#" className="p-4">
