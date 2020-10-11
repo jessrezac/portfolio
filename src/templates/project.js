@@ -16,8 +16,8 @@ export default function Project(props) {
     fields,
   } = props.data.markdownRemark
   const allProjectData = useProjectData()
-  const nextSlug = getNextSlug(fields.slug)
-  const prevSlug = getPrevSlug(fields.slug)
+  const nextProject = getNextSlug(fields.slug)
+  const prevProject = getPrevSlug(fields.slug)
 
   function getNextSlug(slug) {
     const nextProject =
@@ -82,12 +82,12 @@ export default function Project(props) {
           ></div>
 
           <div className="w-full flex justify-between items-center">
-            <Link to={`${prevSlug.node.fields.slug}`}>
-              &larr; {prevSlug.node.frontmatter.title}
+            <Link to={`${prevProject.node.fields.slug}`}>
+              &larr; {prevProject.node.frontmatter.title}
             </Link>
 
-            <Link to={`${nextSlug.node.fields.slug}`}>
-              {nextSlug.node.frontmatter.title} &rarr;
+            <Link to={`${nextProject.node.fields.slug}`}>
+              {nextProject.node.frontmatter.title} &rarr;
             </Link>
           </div>
         </div>
