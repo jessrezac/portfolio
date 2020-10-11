@@ -60,7 +60,7 @@ export default function Project(props) {
   return (
     <Layout>
       <article>
-        <div className="py-20 w-3/5 mx-auto">
+        <div className="py-20 w-full md:px-10 lg:px-20 max-w-screen-xl mx-auto">
           <figure>
             <Img
               fluid={frontmatter.hero_image.childImageSharp.fluid}
