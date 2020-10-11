@@ -1,14 +1,17 @@
-import React from "react"
+import React, { useState } from "react"
 
 import Socials from "./Socials"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 import logo from "./../../content/images/rezac.png"
 
 export default function Menu(props) {
+  const [isOpen, setIsOpen] = useState(false)
   const { siteTitle } = props
 
   return (
-    <div className="flex items-center justify-between max-w-screen-xl mx-auto">
+    <div className="flex items-start justify-between max-w-screen-xl mx-auto">
       <div>
         <a
           href="#"
@@ -24,7 +27,16 @@ export default function Menu(props) {
           />
         </a>
       </div>
-      <div className="flex items-center justify-around text-l uppercase font-sans-300 space-x-10">
+      <button className="z-10 p-2 md:hidden" onClick={() => setIsOpen(!isOpen)}>
+        <FontAwesomeIcon icon={faBars} className="" />
+      </button>
+      <div
+        className={`flex text-l uppercase font-sans-300 space-x-10 ${
+          isOpen
+            ? "flex-col justify-around items-right fixed text-right top-0 right-0 z-0 pt-20 pr-20 bg-light-coral text-seashell h-screen w-full"
+            : "hidden md:block md:flex-row md:justify-between items-center"
+        }`}
+      >
         <a href="#" className="p-4">
           About
         </a>
