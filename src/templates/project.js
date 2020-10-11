@@ -17,16 +17,43 @@ export default function Project(props) {
   } = props.data.markdownRemark
   const allProjectData = useProjectData()
   const nextSlug = getNextSlug(fields.slug)
+  const prevSlug = getPrevSlug(fields.slug)
 
   function getNextSlug(slug) {
-    const allSlugs = allProjectData.map(project => {
-      return project.node.fields.slug
-    })
-    const nextSlug = allSlugs[allSlugs.indexOf(slug) + 1]
-    if (nextSlug !== undefined && nextSlug !== "") {
-      return nextSlug
+    const nextProject =
+      allProjectData[
+        allProjectData
+          .map(project => {
+            return project.node.fields.slug
+          })
+          .indexOf(slug) + 1
+      ]
+    if (
+      nextProject.node.fields.slug !== undefined &&
+      nextProject.node.fields.slug !== ""
+    ) {
+      return nextProject
     } else {
-      return allSlugs[0]
+      return allProjectData[0]
+    }
+  }
+
+  function getPrevSlug(slug) {
+    const prevProject =
+      allProjectData[
+        allProjectData
+          .map(project => {
+            return project.node.fields.slug
+          })
+          .indexOf(slug) - 1
+      ]
+    if (
+      prevProject.node.fields.slug !== undefined &&
+      prevProject.node.fields.slug !== ""
+    ) {
+      return prevProject
+    } else {
+      return allProjectData[allProjectData.length - 1]
     }
   }
 
@@ -53,7 +80,16 @@ export default function Project(props) {
             className="text-l font-serif leading-8 my-20"
             dangerouslySetInnerHTML={{ __html: html }}
           ></div>
-          <Link to={`${nextSlug}`}>Next</Link>
+
+          <div className="w-full flex justify-between items-center">
+            <Link to={`${prevSlug.node.fields.slug}`}>
+              &larr; {prevSlug.node.frontmatter.title}
+            </Link>
+
+            <Link to={`${nextSlug.node.fields.slug}`}>
+              {nextSlug.node.frontmatter.title} &rarr;
+            </Link>
+          </div>
         </div>
       </article>
 
