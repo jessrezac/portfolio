@@ -11,7 +11,7 @@ export default function Menu(props) {
   const { siteTitle } = props
 
   return (
-    <div className="flex items-start justify-between max-w-screen-xl mx-auto">
+    <div className="flex items-start md:items-center justify-between max-w-screen-xl mx-auto">
       <div>
         <a
           href="#"
@@ -27,16 +27,16 @@ export default function Menu(props) {
           />
         </a>
       </div>
-      <button className="z-10 p-2 md:hidden" onClick={() => setIsOpen(!isOpen)}>
+      <button className="z-20 p-6 md:hidden" onClick={() => setIsOpen(!isOpen)}>
         <FontAwesomeIcon icon={faBars} className="" />
       </button>
       <div
-        className={`flex flex-col md:flex-row justify-around items-right md:items-center text-l uppercase font-sans-300 space-x-10
+        className={`flex-col md:flex-row justify-around items-right p-4 md:items-center text-l uppercase font-sans-300 space-x-10
         
         ${
           isOpen
-            ? "fixed text-right top-0 right-0 z-0 pt-20 pr-20 bg-light-coral text-seashell h-screen w-full"
-            : "invisible md:visible"
+            ? "flex fixed text-right top-0 right-0 z-10 bg-light-coral text-seashell h-screen w-screen"
+            : "hidden md:flex"
         }`}
       >
         <a href="#" className="p-4">
@@ -51,7 +51,7 @@ export default function Menu(props) {
         <a href="#" className="p-4">
           Contact
         </a>
-        <div className="text-xl flex justify-right space-x-6 pr-5">
+        <div className="text-xl flex justify-around space-x-6 pr-5">
           <Socials />
         </div>
       </div>
