@@ -72,6 +72,10 @@ module.exports = {
           "margin-right": "0",
         },
 
+        "#postHtml .footnotes p": {
+          display: "inline-block",
+        },
+
         "#postHtml h1": {
           display: "block",
           "font-size": "2em",
@@ -136,6 +140,54 @@ module.exports = {
           "margin-right": "0",
           "font-weight": "bold",
           "font-family": "Trocchi, serif",
+        },
+
+        "#postHtml ol": {
+          display: "block",
+          "list-style-type": "decimal",
+          "margin-top": "1em",
+          "margin-bottom": "1em",
+          "margin-left": "0",
+          "margin-right": "0",
+          "padding-left": "40px",
+        },
+
+        "#postHtml ul": {
+          display: "block",
+          "list-style-type": "disc",
+          "margin-top": "1em",
+          "margin-bottom": "1em",
+          "margin-left": "0",
+          "margin-right": "0",
+          "padding-left": "40px",
+        },
+
+        "#postHtml li": {
+          display: "list-item",
+        },
+
+        "#postHtml hr": {
+          "border-color": "#84A59D",
+          "border-width": "1px",
+          width: "60%",
+          "margin-left": "auto",
+          "margin-right": "auto",
+        },
+
+        "#postHtml a": {
+          color: "#84A59D",
+          "text-decoration": "underline",
+        },
+
+        code: {
+          padding: "4px",
+          "border-radius": ".25rem",
+        },
+
+        pre: {
+          "max-width": "80%",
+          "margin-left": "auto",
+          "margin-right": "auto",
         },
       }
 

@@ -4,13 +4,3 @@
 /* purgecss end ignore */
 
 @tailwind utilities;
-
-/* components */
-@layer components {
-  #postHTML p {
-    @apply my-4;
-  }
-  .btn-blue:hover {
-    @apply bg-gray-500;
-  }
-}
