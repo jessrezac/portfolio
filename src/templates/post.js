@@ -54,7 +54,7 @@ export default function Post(props) {
   }
 
   return (
-    <Layout>
+    <Layout page="post" title={frontmatter.title}>
       <article>
         <div className="py-20 w-full md:px-10 lg:px-20 max-w-screen-xl mx-auto">
           <figure>
@@ -75,7 +75,7 @@ export default function Post(props) {
           </div>
           <div
             id="postHtml"
-            className="text-l font-serif leading-8 my-20"
+            className="text-l font-serif leading-8 my-10"
             dangerouslySetInnerHTML={{ __html: html }}
           ></div>
           <div className="w-full flex justify-between items-center">

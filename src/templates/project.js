@@ -52,7 +52,7 @@ export default function Project(props) {
   }
 
   return (
-    <Layout>
+    <Layout page="project" title={frontmatter.title}>
       <article>
         <div className="py-20 w-full md:px-10 lg:px-20 max-w-screen-xl mx-auto">
           <figure>
@@ -72,7 +72,7 @@ export default function Project(props) {
           </div>
           <div
             id="projectHtml"
-            className="text-l font-serif leading-8 my-20"
+            className="text-l font-serif leading-8 my-10"
             dangerouslySetInnerHTML={{ __html: html }}
           ></div>
 
