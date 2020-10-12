@@ -20,18 +20,18 @@ function Socials(props) {
   return (
     <>
       {" "}
-      <Link to={`https://www.github.com/${github_handle}`} className="p-4">
+      <a href={`https://www.github.com/${github_handle}`} className="p-4">
         <FontAwesomeIcon icon={faGithub} />
-      </Link>
-      <Link to={`https://linkedin.com/in/${linkedin_handle}`} className="p-4">
+      </a>
+      <a href={`https://linkedin.com/in/${linkedin_handle}`} className="p-4">
         <FontAwesomeIcon icon={faLinkedinIn} />
-      </Link>
-      <Link to={`https://twitter.com/${twitter_handle}`} className="p-4">
+      </a>
+      <a href={`https://twitter.com/${twitter_handle}`} className="p-4">
         <FontAwesomeIcon icon={faTwitter} />
-      </Link>
-      <Link to={`https://dev.to/${devto_handle}`} className="p-4">
+      </a>
+      <a href={`https://dev.to/${devto_handle}`} className="p-4">
         <FontAwesomeIcon icon={faDev} />
-      </Link>
+      </a>
     </>
   )
 }
