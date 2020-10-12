@@ -71,7 +71,6 @@ export default function Post(props) {
               {frontmatter.date} &bull; {timeToRead} minute read &bull;{" "}
               {wordCount.words} words
             </div>
-            <div className="btn-blue">Test</div>
           </div>
           <div
             id="postHtml"
