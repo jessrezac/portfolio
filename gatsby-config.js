@@ -80,10 +80,34 @@ module.exports = {
           "gatsby-remark-relative-images",
           "gatsby-remark-normalize-paths",
           {
+            resolve: `gatsby-remark-vscode`,
+            options: {
+              theme: "Monokai Dimmed", // Or install your favorite theme from GitHub
+              inlineCode: {
+                marker: "•",
+              },
+            },
+          },
+          {
             resolve: "gatsby-remark-images",
             options: {
               maxWidth: 1000,
               linkImagesToOriginal: false,
+            },
+          },
+
+          {
+            resolve: `gatsby-remark-image-attributes`,
+            options: {
+              styleAttributes: [
+                "width",
+                "height",
+                "margin-left",
+                "margin-right",
+                "margin-top",
+                "margin-bottom",
+                "float",
+              ],
             },
           },
         ],

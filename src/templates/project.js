@@ -16,24 +16,45 @@ export default function Project(props) {
     fields,
   } = props.data.markdownRemark
   const allProjectData = useProjectData()
-  const nextSlug = getNextSlug(fields.slug)
+  const nextProject = getNextSlug(fields.slug)
+  const prevProject = getPrevSlug(fields.slug)
 
   function getNextSlug(slug) {
-    const allSlugs = allProjectData.map(project => {
-      return project.node.fields.slug
-    })
-    const nextSlug = allSlugs[allSlugs.indexOf(slug) + 1]
-    if (nextSlug !== undefined && nextSlug !== "") {
-      return nextSlug
+    const nextProject =
+      allProjectData[
+        allProjectData
+          .map(project => {
+            return project.node.fields.slug
+          })
+          .indexOf(slug) + 1
+      ]
+    if (nextProject && nextProject.node.fields.slug !== undefined) {
+      return nextProject
     } else {
-      return allSlugs[0]
+      return allProjectData[0]
+    }
+  }
+
+  function getPrevSlug(slug) {
+    const prevProject =
+      allProjectData[
+        allProjectData
+          .map(project => {
+            return project.node.fields.slug
+          })
+          .indexOf(slug) - 1
+      ]
+    if (prevProject && prevProject.node.fields.slug !== undefined) {
+      return prevProject
+    } else {
+      return allProjectData[allProjectData.length - 1]
     }
   }
 
   return (
-    <Layout>
+    <Layout page="project" title={frontmatter.title}>
       <article>
-        <div className="py-20 w-3/5 mx-auto">
+        <div className="py-20 w-full md:px-10 lg:px-20 max-w-screen-xl mx-auto">
           <figure>
             <Img
               fluid={frontmatter.hero_image.childImageSharp.fluid}
@@ -50,10 +71,20 @@ export default function Project(props) {
             </div>
           </div>
           <div
-            className="text-l font-serif leading-8 my-20"
+            id="projectHtml"
+            className="text-l font-serif leading-8 my-10"
             dangerouslySetInnerHTML={{ __html: html }}
           ></div>
-          <Link to={`${nextSlug}`}>Next</Link>
+
+          <div className="w-full flex justify-between items-center">
+            <Link to={`${prevProject.node.fields.slug}`}>
+              &larr; {prevProject.node.frontmatter.title}
+            </Link>
+
+            <Link to={`${nextProject.node.fields.slug}`}>
+              {nextProject.node.frontmatter.title} &rarr;
+            </Link>
+          </div>
         </div>
       </article>
 

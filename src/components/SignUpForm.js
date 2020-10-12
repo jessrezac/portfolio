@@ -33,14 +33,14 @@ export default function SignUpForm(props) {
         <span className="shadowed font-bold">digital wellness</span>.
       </p>
       <form onSubmit={handleSubmit}>
-        <div className="flex flex-wrap xl:flex-no-wrap justify-between space-x-2">
+        <div className="flex flex-wrap xl:flex-no-wrap justify-between lg:space-x-2">
           <input
             type="text"
             name="EMAIL"
             placeholder="Email"
             id="Email"
             value={emailAddress}
-            className="flex-auto border-2 border-baby-pink-100 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-baby-pink-300"
+            className="w-full md:w-auto flex-auto border-2 border-baby-pink-100 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-baby-pink-300"
             onChange={e => setEmailAddress(e.target.value)}
           />
           <input
@@ -49,11 +49,11 @@ export default function SignUpForm(props) {
             placeholder="First Name"
             id="FNAME"
             value={firstName}
-            className="flex-auto border-2 border-baby-pink-100 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-baby-pink-300"
+            className="w-full md:w-auto flex-auto border-2 border-baby-pink-100 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-baby-pink-300"
             onChange={e => setFirstName(e.target.value)}
           />
           <input
-            className="flex-none py-2 px-4 rounded bg-blue-yonder text-azure-x-100"
+            className="w-full md:w-auto flex-none py-2 px-4 rounded bg-blue-yonder text-azure-x-100"
             type="submit"
             value="Submit"
           />
