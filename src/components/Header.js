@@ -1,5 +1,6 @@
 import React from "react"
 import useSiteMetadata from "../static_queries/useSiteMetadata"
+import PageMast from "./PageMast"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
@@ -22,19 +23,7 @@ export default function Header(props) {
         logoVisibility={props.identity === "large" ? "none" : "visible"}
       />
       {props.identity === "large" && (
-        <div className="flex">
-          <div className="px-10 py-20">
-            <div className="font-sans text-sans uppercase">Say hello to</div>
-            <h1 className="text-6xl font-display" id="identity">
-              {title}
-            </h1>
-
-            <div
-              className="font-sans text-xl w-3/5"
-              dangerouslySetInnerHTML={{ __html: infoData.bio }}
-            ></div>
-          </div>
-        </div>
+        <PageMast title={title} intro={infoData.bio} subtitle="Say hello to" />
       )}
     </header>
   )
