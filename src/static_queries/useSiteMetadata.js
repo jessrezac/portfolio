@@ -12,6 +12,8 @@ export default function useSiteMetadata() {
               email
               github_handle
               twitter_handle
+              linkedin_handle
+              devto_handle
             }
             bio
           }
