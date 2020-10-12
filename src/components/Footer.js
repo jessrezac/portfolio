@@ -1,6 +1,7 @@
 import React from "react"
-import Socials from "./Socials"
+import { Link } from "gatsby"
 
+import Socials from "./Socials"
 import logo from "./../../content/images/rezac.png"
 
 function Footer(props) {
@@ -12,7 +13,7 @@ function Footer(props) {
           <img src={logo} alt={siteTitle} className="w-2/5 mx-auto md:mx-0" />
           <p className="font-display text-lg">{siteDescription}</p>
           <p>
-            <a href="hello@rezac.dev" className="underline">
+            <a href="mailto:hello@rezac.dev" className="underline">
               hello@rezac.dev
             </a>{" "}
             &bull; (816) 775-0084‬ &bull; Kansas City, Mo.
