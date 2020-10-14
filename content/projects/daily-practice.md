@@ -5,6 +5,10 @@ author: Jess Rezac
 github_url: https://github.com/jessrezac/daily-practice
 demo_url: https://www.loom.com/share/cdc6cdebfb7f4fd79a302ed9f2084cbc
 posttype: project
+skills:
+  - Ruby
+  - HTML
+  - CSS
 hero_image: "/content/images/daily-practice.png"
 ---
 
