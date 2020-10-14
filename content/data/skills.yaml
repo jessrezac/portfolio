@@ -1,0 +1,15 @@
+- id: Ruby
+  frameworks: Ruby, Ruby on Rails, Sinatra, API Creation
+  icon: faGem
+
+- id: Javascript
+  frameworks: ES6, React, Redux, Gatsby, API use
+  icon: faJs
+
+- id: HTML
+  frameworks: Wordpress, HTML5
+  icon: faHtml5
+
+- id: CSS
+  frameworks: CSS3, Tailwind, Bulma, Bootstrap
+  icon: faCss3Alt
