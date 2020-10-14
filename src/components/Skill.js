@@ -1,12 +1,6 @@
 import React from "react"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faJs,
-  faHtml5,
-  faCss3Alt,
-  faSwift,
-} from "@fortawesome/free-brands-svg-icons"
 
 function Skill(props) {
   const { skill } = props

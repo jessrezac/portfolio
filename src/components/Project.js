@@ -1,5 +1,4 @@
 import React from "react"
-import useProjectData from "../static_queries/useProjectData"
 import Img from "gatsby-image"
 import SkillTag from "./SkillTag"
 
