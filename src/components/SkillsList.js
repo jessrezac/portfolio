@@ -11,10 +11,7 @@ import {
 
 function SkillsList(props) {
   return (
-    <section
-      id="skills"
-      className="max-w-screen-xl bg-queen-blue text-seashell"
-    >
+    <section id="skills" className="w-screen bg-queen-blue text-seashell">
       <div className="flex flex-wrap items-start justify-evenly p-10 text-center">
         <div className="flex-1 p-2">
           <div className="text-5xl">
