@@ -22,7 +22,7 @@ module.exports = {
   },
   //  Map Markdown
   mapping: {
-    "MarkdownRemark.frontmatter.skills": `SkillsYaml`,
+    "MarkdownRemark.frontmatter.skills": `SkillYaml`,
   },
   plugins: [
     `gatsby-theme-tailwindcss`,
