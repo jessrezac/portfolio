@@ -8,9 +8,11 @@ export default function useSkillData() {
           node {
             id
             icon
+            icon_prefix
             frameworks {
               id
               icon
+              icon_prefix
             }
           }
         }
