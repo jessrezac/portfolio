@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 export default function Project(props) {
   let project = props.project
   return (
-    <div className="bg-azure-x-100 sm:w-screen md:w-30 rounded overflow-hidden shadow-lg mb-10 md:mb-0">
+    <div className="bg-azure-x-100 sm:w-screen lg:w-30 rounded overflow-hidden shadow-lg m-4 lg:mb-10">
       <div className="w-full bg-queen-blue">
         <Img
           fluid={project.node.frontmatter.hero_image.childImageSharp.fluid}

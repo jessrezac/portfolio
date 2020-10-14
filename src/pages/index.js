@@ -16,7 +16,7 @@ export default function Home() {
 
       <ProjectList />
 
-      <BlogList />
+      <BlogList bgColor="morning-blue" textColor="seashell" />
 
       <SkillsList />
 
