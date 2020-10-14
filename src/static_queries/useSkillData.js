@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby"
 
-function useSkillData() {
+export default function useSkillData() {
   const data = useStaticQuery(graphql`
     query getSkillData {
       allSkillYaml {
@@ -19,5 +19,3 @@ function useSkillData() {
   `)
   return data.allSkillYaml.edges
 }
-
-export default useSkillData
