@@ -1,15 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout"
 import PageMast from "../components/PageMast"
+import ProjectCardList from "../components/ProjectCardList"
 
 function Projects(props) {
+  const colorClasses = "bg-max-yellow-red text-inherit"
   return (
-    <Layout
-      page="projects"
-      title="Projects"
-      bgColor="max-yellow-red"
-      textColor="inherit"
-    >
+    <Layout page="projects" title="Projects" colorClasses={colorClasses}>
       <section className="bg-max-yellow-red">
         <PageMast
           title="Projects"
@@ -17,7 +14,9 @@ function Projects(props) {
           intro="TK intro intro"
         />
       </section>
-      <section>Hi</section>
+      <section>
+        <ProjectCardList />
+      </section>
     </Layout>
   )
 }

@@ -4,14 +4,10 @@ import BlogList from "./../components/BlogList"
 import PageMast from "./../components/PageMast"
 
 function Blog(props) {
+  const colorClasses = "bg-morning-blue text-seashell"
   return (
-    <Layout
-      page="blog"
-      title="Blog"
-      bgColor="morning-blue"
-      textColor="seashell"
-    >
-      <section className="bg-morning-blue text-seashell">
+    <Layout page="blog" title="Blog" colorClasses={colorClasses}>
+      <section className={colorClasses}>
         <PageMast
           title="Blog"
           subtitle="TK whatever he could not withstand"

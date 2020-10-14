@@ -13,9 +13,7 @@ export default function Header(props) {
     <header
       id="header"
       className={`w-screen ${
-        props.identity !== "large"
-          ? "bg-gray-800 text-baby-pink-300"
-          : "bg-baby-pink-300"
+        props.identity !== "large" ? props.colorClasses : "bg-baby-pink-300"
       }`}
     >
       <Menu

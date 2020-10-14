@@ -5,7 +5,7 @@ import Header from "./Header"
 import Footer from "./Footer"
 
 function Layout(props) {
-  const { title, description, bgColor, textColor } = props
+  const { title, description, colorClasses } = props
   const siteTitle = useSiteMetadata().title
   const siteDescription = useSiteMetadata().description
 
@@ -21,7 +21,7 @@ function Layout(props) {
       <Header
         siteTitle={siteTitle}
         identity={props.page === "home" ? "large" : "small"}
-        className={`bg-${bgColor} text-${textColor}`}
+        colorClasses={colorClasses}
       />
       {props.children}
       <Footer siteTitle={siteTitle} siteDescription={siteDescription} />

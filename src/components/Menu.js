@@ -32,7 +32,7 @@ export default function Menu(props) {
         <FontAwesomeIcon icon={faBars} className="" />
       </button>
       <div
-        className={`flex flex-col fixed font-black md:font-normal top-0 md:top-auto right-0 md:right-auto md:relative md:flex-row justify-around items-center px-4 py-20 md:p-4 text-xl md:text-l uppercase font-sans-300 md:space-x-4 lg:space-x-10 bg-light-coral md:bg-transparent h-screen md:h-auto w-screen md:w-auto
+        className={`flex flex-col fixed md:font-normal top-0 md:top-auto right-0 md:right-auto md:relative md:flex-row justify-around items-center px-4 py-20 md:p-4 text-xl md:text-l uppercase font-sans-300 md:space-x-4 lg:space-x-10 bg-light-coral md:bg-transparent h-screen md:h-auto w-screen md:w-auto
         ${isOpen ? "z-10" : "hidden md:flex"}`}
       >
         <Link to="/about" className="p-4">
