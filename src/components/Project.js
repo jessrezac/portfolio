@@ -31,7 +31,6 @@ export default function Project(props) {
         ></div>
       </div>
       <div className="px-6 pt-4 pb-2">
-        {console.log(skills)}
         {skills &&
           skills.map(skill => <SkillTag skill={skill} key={skill.id} />)}
       </div>
