@@ -17,6 +17,13 @@ export default function useSiteMetadata() {
             }
             bio
           }
+          aboutData {
+            title
+            subtitle
+            intro
+            page_body
+            colors
+          }
         }
       }
     }

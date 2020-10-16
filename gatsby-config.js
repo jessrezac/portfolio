@@ -6,6 +6,7 @@
 
 const config = require("./config.json")
 const infoData = require("./content/data/info.json")
+const aboutData = require("./content/data/about.json")
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
@@ -19,6 +20,7 @@ module.exports = {
     about: config.about,
     contact: config.contact,
     infoData: infoData,
+    aboutData: aboutData,
   },
   //  Map Markdown
   mapping: {
