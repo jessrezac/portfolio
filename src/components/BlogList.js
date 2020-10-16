@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import useBlogData from "../static_queries/useBlogData"
 import BlogPreview from "./BlogPreview"
 

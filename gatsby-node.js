@@ -39,7 +39,6 @@ exports.createPages = async function ({ actions, graphql }) {
         context: { slug: slug },
       })
     } else {
-      console.log(edge.node.fields.slug)
       //blog post
       createPage({
         path: slug,

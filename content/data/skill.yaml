@@ -1,0 +1,36 @@
+- id: Ruby
+  icon: gem
+  icon_prefix: fas
+  frameworks:
+    - id: Ruby on Rails
+    - id: Sinatra
+    - id: API Creation
+
+- id: Javascript
+  icon: js
+  icon_prefix: fab
+  frameworks:
+    - id: ES6
+    - id: React
+      icon: react
+      icon_prefix: fab
+    - id: Redux
+    - id: Gatsby
+    - id: API use
+
+- id: HTML
+  icon: html5
+  icon_prefix: fab
+  frameworks:
+    - id: Wordpress
+      icon: wordpress
+      icon_prefix: fab
+
+- id: CSS
+  icon: css3-alt
+  icon_prefix: fab
+  frameworks:
+    - id: Tailwind
+    - id: Bulma
+    - id: Bootstrap
+      icon: faBootstrap

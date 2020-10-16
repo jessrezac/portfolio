@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Socials from "./Socials"
 import logo from "./../../content/images/rezac.png"

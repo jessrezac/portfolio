@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "./../components/Layout"
 
 function PageMast(props) {
   const { title, subtitle, intro } = props

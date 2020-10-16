@@ -16,6 +16,11 @@ export default function useProjectData() {
               title
               github_url
               demo_url
+              skills {
+                id
+                icon
+                icon_prefix
+              }
               hero_image {
                 childImageSharp {
                   fluid(maxWidth: 800) {

@@ -5,6 +5,8 @@ author: Jess Rezac
 github_url: https://github.com/jessrezac/podcast-book-club
 demo_url: https://www.loom.com/share/d65589fc83a14adb922812be633c12eb
 posttype: project
+skills:
+  - Ruby
 hero_image: "/content/images/podcast-book-club.png"
 ---
 

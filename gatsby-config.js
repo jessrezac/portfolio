@@ -20,6 +20,10 @@ module.exports = {
     contact: config.contact,
     infoData: infoData,
   },
+  //  Map Markdown
+  mapping: {
+    "MarkdownRemark.frontmatter.skills": `SkillYaml`,
+  },
   plugins: [
     `gatsby-theme-tailwindcss`,
     `gatsby-source-fontawesome`,
@@ -113,6 +117,9 @@ module.exports = {
         ],
       },
     },
+    // Transform YAML
+    `gatsby-transformer-yaml`,
+
     // Prefetch Google Fonts
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,

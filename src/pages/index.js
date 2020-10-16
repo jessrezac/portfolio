@@ -9,7 +9,7 @@ import CallOutBanner from "./../components/CallOutBanner"
 import SkillsList from "./../components/SkillsList"
 
 export default function Home() {
-  const { title, description, infoData } = useSiteMetadata()
+  const { title, description } = useSiteMetadata()
   return (
     <Layout page="home" title={title} description={description}>
       <SignUpHero />

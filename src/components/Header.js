@@ -2,8 +2,6 @@ import React from "react"
 import useSiteMetadata from "../static_queries/useSiteMetadata"
 import PageMast from "./PageMast"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
 import Menu from "./../components/Menu"
 
 export default function Header(props) {
