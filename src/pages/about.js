@@ -11,7 +11,11 @@ function About(props) {
       <section className={colors}>
         <PageMast title={title} subtitle={subtitle} intro={intro} />
       </section>
-      <section dangerouslySetInnerHTML={{ __html: page_body }} />
+
+      <section
+        className="max-w-screen-xl py-20 px-10 xl:px-0 xl:mx-auto"
+        dangerouslySetInnerHTML={{ __html: page_body }}
+      />
     </Layout>
   )
 }
