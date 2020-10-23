@@ -5,7 +5,7 @@ import Socials from "./Socials"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import { faBars } from "@fortawesome/free-solid-svg-icons"
-import logo from "./../../content/images/rezac.png"
+import logo from "./../../content/images/rezac-outline.png"
 
 export default function Menu(props) {
   const [isOpen, setIsOpen] = useState(false)
