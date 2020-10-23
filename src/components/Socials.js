@@ -15,6 +15,7 @@ function Socials(props) {
     linkedin_handle,
     devto_handle,
     twitter_handle,
+    kofi_handle,
   } = useSiteMetadata().infoData.contact
   return (
     <>
@@ -30,6 +31,9 @@ function Socials(props) {
       </a>
       <a href={`https://dev.to/${devto_handle}`} className="p-4">
         <FontAwesomeIcon icon={faDev} />
+      </a>
+      <a href={`https://www.ko-fi.com/${kofi_handle}`} className="p-4">
+        <FontAwesomeIcon icon="coffee" />
       </a>
     </>
   )
