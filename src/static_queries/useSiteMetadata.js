@@ -14,6 +14,7 @@ export default function useSiteMetadata() {
               twitter_handle
               linkedin_handle
               devto_handle
+              kofi_handle
             }
             bio
           }
