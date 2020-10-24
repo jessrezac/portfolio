@@ -10,6 +10,7 @@ skills:
   - Javascript
   - HTML
   - CSS
+kicker: Card Trick creates clean and simple flashcards, automatically, from Google Docs. Built using Ruby on Rails with help from Google Drive API and Google File Picker API.
 hero_image: "/content/images/card-trick.png"
 ---
 

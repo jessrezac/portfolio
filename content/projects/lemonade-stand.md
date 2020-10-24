@@ -10,6 +10,7 @@ skills:
   - Ruby
   - HTML
   - CSS
+kicker: A JavaScript build of the classic AppleIIE game, powered by a Ruby on Rails API.
 hero_image: "/content/images/lemonade-stand.png"
 ---
 
