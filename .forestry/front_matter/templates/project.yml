@@ -20,6 +20,7 @@ fields:
 - type: text
   name: posttype
   label: posttype
+  default: project
 - type: list
   name: skills
   label: skills
