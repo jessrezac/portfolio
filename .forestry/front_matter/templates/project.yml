@@ -4,26 +4,28 @@ hide_body: false
 fields:
 - type: datetime
   name: date
-  label: date
+  label: Date
+  default: now
 - type: text
   name: title
-  label: title
+  label: Title
 - type: text
   name: author
-  label: author
+  label: Author
 - type: text
   name: github_url
-  label: github_url
+  label: Github URL
 - type: text
   name: demo_url
-  label: demo_url
+  label: Demo URL
 - type: text
   name: posttype
-  label: posttype
+  label: Post Type
   default: project
+  hidden: true
 - type: list
   name: skills
-  label: skills
+  label: Skills
 - type: file
   name: hero_image
-  label: hero_image
+  label: Hero Image
