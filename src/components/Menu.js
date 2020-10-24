@@ -11,7 +11,7 @@ export default function Menu(props) {
   const { siteTitle } = props
 
   return (
-    <div className="flex items-start md:items-center justify-between max-w-screen-xl mx-auto">
+    <nav className="flex items-start md:items-center justify-between max-w-screen-xl mx-auto">
       <div>
         <Link
           to="/"
@@ -50,6 +50,6 @@ export default function Menu(props) {
           <Socials />
         </div>
       </div>
-    </div>
+    </nav>
   )
 }
