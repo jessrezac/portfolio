@@ -4,7 +4,7 @@ import SkillTag from "./SkillTag"
 
 export default function Project(props) {
   const { project } = props
-  const { frontmatter } = project.node
+  const { frontmatter, fields } = project.node
   const {
     title,
     github_url,
@@ -20,7 +20,7 @@ export default function Project(props) {
       </div>
       <div className="px-6 py-4">
         <div className="font-sans uppercase font-bold text-xl mb-2 text-center">
-          {title}
+          <a href={`projects${fields.slug}`}>{title}</a>
         </div>
         <div className="font-sans text-center mb-2">
           <a href={github_url} className="shadowed">
@@ -31,7 +31,15 @@ export default function Project(props) {
             Demo
           </a>
         </div>
-        <div className="text-gray-700 text-base leading-7">{kicker}</div>
+        <div className="text-gray-700 text-base leading-7">
+          {kicker}{" "}
+          <a
+            href={`projects${fields.slug}`}
+            className="underline text-blue-yonder"
+          >
+            Read More &raquo;
+          </a>
+        </div>
       </div>
       <div className="px-6 pt-4 pb-2">
         {skills &&

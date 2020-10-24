@@ -118,6 +118,7 @@ module.exports = {
                 "margin-top",
                 "margin-bottom",
                 "float",
+                "max-width",
               ],
             },
           },

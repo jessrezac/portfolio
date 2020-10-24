@@ -10,7 +10,9 @@ export default function BlogPreview(props) {
   } = props.post.node
   return (
     <article className="max-w-screen md:w-3/5 mx-auto text-left pb-10">
-      <div className="font-display font-bold text-2xl">{frontmatter.title}</div>
+      <div className="font-display font-bold text-2xl">
+        <a href={`.${fields.slug}`}>{frontmatter.title}</a>
+      </div>
       <div className="font-sans uppercase text-xs py-2">
         {frontmatter.date} &bull; {timeToRead} minutes to read &bull;{" "}
         {wordCount.words} words
