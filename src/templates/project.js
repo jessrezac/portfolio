@@ -9,7 +9,6 @@ import Img from "gatsby-image"
 export default function Project(props) {
   const {
     frontmatter,
-    excerpt,
     html,
     timeToRead,
     wordCount,
