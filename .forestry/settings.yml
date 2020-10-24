@@ -6,9 +6,9 @@ webhook_url:
 sections:
 - type: directory
   path: content/data
-  label: Page Data
+  label: Info
   create: none
-  match: "**/*"
+  match: "**/info.json"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
