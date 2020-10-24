@@ -63,8 +63,8 @@ export default function Project(props) {
           </figure>
 
           <div>
-            <h1 className="text-6xl font-display py-2">{frontmatter.title}</h1>
-            <h2 className="font-sans text-2xl italic py-2">{excerpt}</h2>
+            <h1 className="text-6xl font-display pt-2">{frontmatter.title}</h1>
+            <h2 className="font-sans text-2xl italic">{frontmatter.kicker}</h2>
             <div className="font-sans uppercase text-xs py-2">
               {frontmatter.date} &bull; {timeToRead} minute read &bull;{" "}
               {wordCount.words} words
@@ -107,6 +107,7 @@ export const getProjectData = graphql`
         title
         author
         date(formatString: "MMMM Do, YYYY")
+        kicker
         hero_image {
           childImageSharp {
             fluid(maxWidth: 1500) {

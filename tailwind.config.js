@@ -179,6 +179,21 @@ module.exports = {
           "text-decoration": "underline",
         },
 
+        "#postHtml blockquote": {
+          display: "block",
+          "margin-top": "1em",
+          "margin-bottom": "1em",
+          "margin-left": "auto",
+          "margin-right": "auto",
+          "font-weight": "800",
+          "font-size": "2rem",
+          padding: "30px 0",
+          "max-width": "500px",
+          "align-self": "center",
+          "border-top": "solid 2px #84A59D",
+          "border-bottom": "solid 2px #84A59D",
+        },
+
         code: {
           padding: "4px",
           "border-radius": ".25rem",

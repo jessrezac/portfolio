@@ -3,6 +3,7 @@ date: 2020-10-11T22:40:32Z
 title: Test Some Formats
 author: Jess Rezac
 posttype: post
+kicker: I am trying a kicker
 hero_image: "/content/images/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg"
 ---
 

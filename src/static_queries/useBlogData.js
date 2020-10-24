@@ -15,6 +15,7 @@ export default function useBlogData() {
               author
               date(formatString: "MMMM Do, YYYY")
               title
+              kicker
               hero_image {
                 childImageSharp {
                   fluid(maxWidth: 800) {

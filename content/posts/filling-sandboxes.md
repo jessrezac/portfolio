@@ -1,12 +1,13 @@
 ---
-date: 2019-08-13T22:40:32.000+00:00
+date: 2019-05-30T22:40:32.000+00:00
 title: Filling Sandboxes
 author: Jess Rezac
 posttype: post
+kicker: As I lean into learning a new skill, I'm re-learning how to be a student.
 hero_image: "/content/images/sandboxes.jpg"
-
 ---
-Obsessed with productivity hacks — to an _un_productive fault — I schedule every half-hour block of my day in a written planner. [This year’s planner](https://www.livewhaleplanner.com/) includes a space labeled for affirmations and insights. I keep a record of ideas that have inspired me or disrupted my thinking throughout the week. On April 17, I took note:
+
+Obsessed with productivity hacks — to an *un*productive fault — I schedule every half-hour block of my day in a written planner. [This year’s planner](https://www.livewhaleplanner.com/) includes a space labeled for affirmations and insights. I keep a record of ideas that have inspired me or disrupted my thinking throughout the week. On April 17, I took note:
 
 > “I’m writing a first draft and reminding myself that I’m simply shoveling sand into a box so that later I can build castles.” — Shannon Hale
 
@@ -16,7 +17,7 @@ As I lean into learning a new skill, I’m re-learning how to be a student. That
 
 But, there are so many reasons I’m ready to learn back-end developing:
 
-![](https://cdn-images-1.medium.com/max/1440/0*6B70XMItrXPfeoqj)Photo by [Goran Ivos](https://unsplash.com/@goran_ivos?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)
+![](https://cdn-images-1.medium.com/max/1440/0*6B70XMItrXPfeoqj#max-width=500px;float=left;padding-right=10px;) Photo by [Goran Ivos](https://unsplash.com/@goran_ivos) on [Unsplash](https://unsplash.com)
 
 ### Practically Speaking,
 
@@ -32,7 +33,7 @@ When I left that role, I became the website/digital marketing specialist at an i
 
 But my interest in coding is more than that.
 
-![](https://cdn-images-1.medium.com/max/1440/0*4Z1XEm4Ne4h4KZOJ)Photo by [T. Chick McClure](https://unsplash.com/@tchickmcclure?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)
+![](https://cdn-images-1.medium.com/max/1440/0*4Z1XEm4Ne4h4KZOJ#max-width=500px;float=right;padding-left=10px)Photo by [T. Chick McClure](https://unsplash.com/@tchickmcclure) on [Unsplash](https://unsplash.com)
 
 ### On a more motivating level,
 
@@ -42,4 +43,4 @@ I’ve seen how powerful organizations that make their money on developing softw
 
 So, for now, I’m committed to filling this sandbox. And I’m dreaming about the castles I’ll be able to build (and tear down) in the future.
 
-Hero photo by [Markus Spiske](https://unsplash.com/@markusspiske?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)
+Hero photo by [Markus Spiske](https://unsplash.com/@markusspiske) on [Unsplash](https://unsplash.com)

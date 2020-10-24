@@ -7,6 +7,7 @@ demo_url: https://www.loom.com/share/d65589fc83a14adb922812be633c12eb
 posttype: project
 skills:
   - Ruby
+kicker: Podcast Book Club is a command-line interface that builds an explorable library of book recommendations from Vox's Ezra Klein Show podcast.
 hero_image: "/content/images/podcast-book-club.png"
 ---
 

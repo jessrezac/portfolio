@@ -21,6 +21,7 @@ export default function useProjectData() {
                 icon
                 icon_prefix
               }
+              kicker
               hero_image {
                 childImageSharp {
                   fluid(maxWidth: 800) {

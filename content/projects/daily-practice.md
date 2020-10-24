@@ -9,6 +9,7 @@ skills:
   - Ruby
   - HTML
   - CSS
+kicker: Daily Practice is a private journal for free-writing and keeping a daily gratitude, forgiveness and commitment practice. Built using Ruby, Sinatra, and ActiveRecord.
 hero_image: "/content/images/daily-practice.png"
 ---
 

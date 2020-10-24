@@ -4,8 +4,15 @@ import SkillTag from "./SkillTag"
 
 export default function Project(props) {
   const { project } = props
-  const { frontmatter, html } = project.node
-  const { title, github_url, demo_url, hero_image, skills } = frontmatter
+  const { frontmatter } = project.node
+  const {
+    title,
+    github_url,
+    demo_url,
+    hero_image,
+    kicker,
+    skills,
+  } = frontmatter
   return (
     <div className="bg-azure-x-100 sm:w-screen lg:w-30 rounded overflow-hidden shadow-lg m-4 lg:mb-10">
       <div className="w-full bg-queen-blue">
@@ -24,10 +31,7 @@ export default function Project(props) {
             Demo
           </a>
         </div>
-        <div
-          className="text-gray-700 text-base leading-7"
-          dangerouslySetInnerHTML={{ __html: html }}
-        ></div>
+        <div className="text-gray-700 text-base leading-7">{kicker}</div>
       </div>
       <div className="px-6 pt-4 pb-2">
         {skills &&

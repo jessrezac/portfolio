@@ -10,6 +10,7 @@ skills:
   - Ruby
   - HTML
   - CSS
+kicker: A React app to manage slam poetry bouts for Louder Than A Bomb-Kansas City. Built with React and Redux with a Rails API.
 hero_image: "/content/images/bout-manager.png"
 ---
 
