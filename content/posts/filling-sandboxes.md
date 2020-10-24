@@ -12,8 +12,6 @@ Obsessed with productivity hacks — to an _un_productive fault — I schedule e
 
 I read this on an English teacher’s wall. I was about 10 days in to the pre-work before my Online Software Engineering program began, and I felt like I was only shoveling sand.
 
-![](https://cdn-images-1.medium.com/max/2600/0*cKpJ4hl3XRAbBqvo)Photo by [Markus Spiske](https://unsplash.com/@markusspiske?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)
-
 As I lean into learning a new skill, I’m re-learning how to be a student. That’s fun and frustrating at the same time. Sometimes, it feels tedious — like filling a sandbox with sand (I didn’t know until I was a parent that sand is actually pretty dang heavy and filling a sandbox is a chore).
 
 But, there are so many reasons I’m ready to learn back-end developing:
@@ -43,3 +41,5 @@ I’ve seen how software designed without concern for social consequence can hav
 I’ve seen how powerful organizations that make their money on developing software have become. I want developers to understand their power in what gets built. I want to be part of organizing within the developer community. Related, I want to be a coder who is available to community organizers for social justice projects.
 
 So, for now, I’m committed to filling this sandbox. And I’m dreaming about the castles I’ll be able to build (and tear down) in the future.
+
+Hero photo by [Markus Spiske](https://unsplash.com/@markusspiske?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)
