@@ -2,17 +2,15 @@ import React from "react"
 import Layout from "../components/Layout"
 import PageMast from "../components/PageMast"
 import ProjectCardList from "../components/ProjectCardList"
+import useSiteMetadata from "../static_queries/useSiteMetadata"
 
 function Projects(props) {
-  const colorClasses = "bg-max-yellow-red text-inherit"
+  const { projectsData } = useSiteMetadata()
+  const { title, subtitle, intro, colors } = projectsData
   return (
-    <Layout page="projects" title="Projects" colorClasses={colorClasses}>
-      <section className="bg-max-yellow-red">
-        <PageMast
-          title="Projects"
-          subtitle="TK whatever he could not withstand"
-          intro="TK intro intro"
-        />
+    <Layout page="projects" title={title} colorClasses={colors}>
+      <section className={colors}>
+        <PageMast title={title} subtitle={subtitle} intro={intro} />
       </section>
       <section>
         <ProjectCardList />

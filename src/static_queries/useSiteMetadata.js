@@ -25,6 +25,18 @@ export default function useSiteMetadata() {
             page_body
             colors
           }
+          blogData {
+            title
+            subtitle
+            intro
+            colors
+          }
+          projectsData {
+            title
+            subtitle
+            intro
+            colors
+          }
         }
       }
     }
