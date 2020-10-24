@@ -40,6 +40,8 @@ front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
+  preview_env:
+  - MAILCHIMP_ENDPOINT=https://jlrezac.us2.list-manage.com/subscribe/post?u=71f11860699a9b966ae214e8c&amp;id=b5c724ff42=
   preview_output_directory: public
   install_dependencies_command: npm install
   preview_docker_image: forestryio/node:12
