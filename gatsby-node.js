@@ -34,11 +34,12 @@ exports.createPages = async function ({ actions, graphql }) {
     const slug = edge.node.fields.slug
     if (edge.node.frontmatter.posttype === "project") {
       createPage({
-        path: slug,
+        path: `/projects${slug}`,
         component: require.resolve(`./src/templates/project.js`),
         context: { slug: slug },
       })
     } else {
+      const category = edge.node.frontmatter.category
       //blog post
       createPage({
         path: slug,
