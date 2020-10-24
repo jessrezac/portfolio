@@ -3,7 +3,7 @@ date: 2019-08-13T22:40:32.000+00:00
 title: Filling Sandboxes
 author: Jess Rezac
 posttype: post
-hero_image: https://cdn-images-1.medium.com/max/2600/0*cKpJ4hl3XRAbBqvo
+hero_image: "/content/images/sandboxes.jpg"
 
 ---
 Obsessed with productivity hacks — to an _un_productive fault — I schedule every half-hour block of my day in a written planner. [This year’s planner](https://www.livewhaleplanner.com/) includes a space labeled for affirmations and insights. I keep a record of ideas that have inspired me or disrupted my thinking throughout the week. On April 17, I took note:
