@@ -1,0 +1,28 @@
+---
+label: Project
+hide_body: false
+fields:
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: title
+  label: title
+- type: text
+  name: author
+  label: author
+- type: text
+  name: github_url
+  label: github_url
+- type: text
+  name: demo_url
+  label: demo_url
+- type: text
+  name: posttype
+  label: posttype
+- type: list
+  name: skills
+  label: skills
+- type: file
+  name: hero_image
+  label: hero_image
