@@ -23,7 +23,7 @@ export default function Menu(props) {
             src={logo}
             alt={`${siteTitle} logo`}
             title={siteTitle}
-            className="h-6 px-5"
+            className="h-8 px-5"
           />
         </Link>
       </div>

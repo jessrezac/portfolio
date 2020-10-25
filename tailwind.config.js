@@ -15,6 +15,7 @@ module.exports = {
       backgroundImage: theme => ({
         "hero-collage": "url('../../content/images/collage.png')",
         "watercolor-texture": "url('../../content/images/wctexture.png')",
+        bluepaint: "url('../../content/images/bluepaint.png')",
       }),
       spacing: {
         "90vh": "90vh",

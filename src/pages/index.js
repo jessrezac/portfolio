@@ -9,7 +9,8 @@ import CallOutBanner from "./../components/CallOutBanner"
 import SkillsList from "./../components/SkillsList"
 
 export default function Home() {
-  const { title, description } = useSiteMetadata()
+  const { title, description, infoData } = useSiteMetadata()
+  const { callOutPhrase } = infoData
   return (
     <Layout page="home" title={title} description={description}>
       <SignUpHero />
@@ -20,7 +21,7 @@ export default function Home() {
 
       <SkillsList />
 
-      <CallOutBanner />
+      <CallOutBanner callOutPhrase={callOutPhrase} />
     </Layout>
   )
 }
