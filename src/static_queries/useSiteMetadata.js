@@ -8,6 +8,7 @@ export default function useSiteMetadata() {
           title
           description
           infoData {
+            callOutPhrase
             contact {
               email
               github_handle

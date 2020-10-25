@@ -1,6 +1,5 @@
 {
-  "description": "<p>This blog was created using <a href=\"https://forestry.io/\" title=\"Forestry Link\">Forestry</a> &amp; <a href=\"https://www.gatsbyjs.org/\" title=\"Gatsby Link\">Gatsby</a></p>",
-  "cta": "<p>To get started, import this site into Forestry or checkout the repository <a href=\"https://github.com/kendallstrautman/starter-blog-gatsby\" title=\"Repo Url\">here</a>.</p>",
+  "callOutPhrase": "Take a deep breath",
   "contact": {
     "email": "jess@rezac.dev",
     "twitter_handle": "CheerUpEmoDev",
