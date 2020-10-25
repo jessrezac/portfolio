@@ -1,6 +1,6 @@
 {
-    "title": "Projects",
-    "subtitle": "TK subtitle",
-    "intro": "TK intro intro",
-    "colors": "bg-max-yellow-red text-inherit"
+  "title": "Projects",
+  "subtitle": "Explore my",
+  "intro": "I code Ruby and JavaScript and my projects are built with React, Ruby on Rails, and Sinatra.",
+  "colors": "bg-max-yellow-red text-inherit"
 }
