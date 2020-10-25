@@ -33,6 +33,13 @@ module.exports = {
   },
   plugins: [
     `gatsby-theme-tailwindcss`,
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        tailwind: true,
+      },
+    },
     `gatsby-source-fontawesome`,
     `gatsby-plugin-react-helmet`,
     /* Define filesystem */
@@ -79,6 +86,7 @@ module.exports = {
         path: `${__dirname}/content/images`,
       },
     },
+
     // Transform images
     `gatsby-image`,
     `gatsby-transformer-sharp`,
@@ -88,7 +96,6 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          "gatsby-remark-relative-images",
           "gatsby-remark-normalize-paths",
           {
             resolve: `gatsby-remark-vscode`,
@@ -125,6 +132,7 @@ module.exports = {
         ],
       },
     },
+
     // Transform YAML
     `gatsby-transformer-yaml`,
 

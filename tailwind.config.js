@@ -1,7 +1,12 @@
 const plugin = require("tailwindcss/plugin")
 
 module.exports = {
-  purge: ["./src/**/*.html", "./src/**/*.vue", "./src/**/*.jsx"],
+  purge: [
+    "./src/**/*.html",
+    "./src/**/*.vue",
+    "./src/**/*.jsx",
+    "./src/**/*.js",
+  ],
   theme: {
     inset: {
       "1/10": "10%",
@@ -32,14 +37,14 @@ module.exports = {
       colors: {
         seashell: "#FAF2EB",
         "max-yellow-red": "#F6BD60",
-        "baby-pink": { "100": "#fcefee", "300": "#F5CAC3" },
         "morning-blue": "#84A59D",
         "light-coral": "#F28482",
-        "azure-x": { "100": "#F1F7F8", "200": "#DDEAEE" },
         silver: "#C7C7C7",
         "powder-blue": "#C0E8EC",
         "blue-yonder": "#5C7AA2",
         "queen-blue": "#5D718B",
+        "baby-pink": { "100": "#fcefee", "300": "#F5CAC3" },
+        "azure-x": { "100": "#F1F7F8", "200": "#DDEAEE" },
       },
     },
 

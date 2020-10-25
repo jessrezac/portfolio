@@ -9,12 +9,12 @@ import {
 
 export default function ProjectList(props) {
   let projects = useProjectData()
-  let initialVisibleProjects = [0]
+  let initialVisibleProjects = [0, 1, 2]
 
-  // get window size to determine number of visible projects to show
-  if (window.innerWidth > 640) {
-    initialVisibleProjects = [0, 1, 2]
-  }
+  // // get window size to determine number of visible projects to show
+  // if (window.innerWidth > 640) {
+  //   initialVisibleProjects = [0, 1, 2]
+  // }
 
   const [visibleProjects, setVisibleProjects] = useState(initialVisibleProjects)
 
