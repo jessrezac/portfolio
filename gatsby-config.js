@@ -109,28 +109,35 @@ module.exports = {
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.edges.map(edge => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
+                return {
+                  title: edge.node.frontmatter.title,
+                  description: edge.node.frontmatter.kicker,
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
-                })
+                  custom_elements: [
+                    { "content:encoded": edge.node.rawMarkdownBody },
+                  ],
+                }
               })
             },
             query: `
               {
                 allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: {frontmatter: {posttype: {eq: "post"}}}, 
+                  sort: {fields: frontmatter___date, order: DESC}
                 ) {
                   edges {
                     node {
-                      excerpt
-                      html
-                      fields { slug }
+                      id
+                      rawMarkdownBody
+                      fields {
+                        slug
+                      }
                       frontmatter {
-                        title
                         date
+                        title
+                        kicker
                       }
                     }
                   }
