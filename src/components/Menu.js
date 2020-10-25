@@ -44,7 +44,7 @@ export default function Menu(props) {
           Blog
         </Link>
         <a href="https://www.learn.co/jessrezac/resume" className="p-4">
-          Resume
+          Resume <FontAwesomeIcon icon="download" className="" />
         </a>
         <div className="text-4xl md:text-xl flex justify-around space-x-6 pr-5">
           <Socials />
