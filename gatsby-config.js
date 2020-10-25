@@ -57,7 +57,6 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
-
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -91,6 +90,66 @@ module.exports = {
     `gatsby-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    // Create rss feed
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return {
+                  title: edge.node.frontmatter.title,
+                  description: edge.node.frontmatter.kicker,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  custom_elements: [
+                    { "content:encoded": edge.node.rawMarkdownBody },
+                  ],
+                }
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  filter: {frontmatter: {posttype: {eq: "post"}}}, 
+                  sort: {fields: frontmatter___date, order: DESC}
+                ) {
+                  edges {
+                    node {
+                      id
+                      rawMarkdownBody
+                      fields {
+                        slug
+                      }
+                      frontmatter {
+                        date
+                        title
+                        kicker
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/rss.xml",
+            title: "Rezac.dev's RSS Feed",
+          },
+        ],
+      },
+    },
     // Transform Markdown
     {
       resolve: `gatsby-transformer-remark`,
