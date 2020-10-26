@@ -53,7 +53,7 @@ In case you were hoping my personal life was steadier, my family got doxxed mid-
 
 ## Lessons
 
-This app was much more complex than any of the React apps we worked with in the React module at Flatiron School. The API was more ambitious than my Rails app, [Card Trick](https://github.com/jessrezac/card-trick), and accessing it as an API added complexity to the project, too.
+This app was much more complex than any of the React apps we worked with in the React module at Flatiron School. The API was more ambitious than my Rails app, [Card Trick](https://rezac.dev/projects/card-trick), and accessing it as an API added complexity to the project, too.
 
 ![Git log for bout manager app](/content/images/bout-manager-todo-lists.png "Git Commit Messages")Todo lists, notes, planning and git commit messages kept me organized over a long coding project timeline
 
