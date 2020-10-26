@@ -70,7 +70,7 @@ module.exports = {
       }
 
       const posts = {
-        "#postHtml p": {
+        "#postHtml p, #projectHtml p": {
           display: "block",
           "margin-top": "1em",
           "margin-bottom": "1em",
@@ -78,11 +78,11 @@ module.exports = {
           "margin-right": "0",
         },
 
-        "#postHtml .footnotes p": {
+        "#postHtml .footnotes p, #projectHtml .footnotes p": {
           display: "inline-block",
         },
 
-        "#postHtml h1": {
+        "#postHtml h1, #projectHtml h1": {
           display: "block",
           "font-size": "2em",
           "margin-top": "0.67em",
@@ -93,7 +93,7 @@ module.exports = {
           "font-family": "Trocchi, serif",
         },
 
-        "#postHtml h2": {
+        "#postHtml h2, #projectHtml h2": {
           display: "block",
           "font-size": "1.5em",
           "margin-top": "0.83em",
@@ -104,7 +104,7 @@ module.exports = {
           "font-family": "Trocchi, serif",
         },
 
-        "#postHtml h3": {
+        "#postHtml h3, #projectHtml h3": {
           display: "block",
           "font-size": "1.17em",
           "margin-top": "1em",
@@ -115,7 +115,7 @@ module.exports = {
           "font-family": "Trocchi, serif",
         },
 
-        "#postHtml h4": {
+        "#postHtml h4, #projectHtml h4": {
           display: "block",
           "font-size": "1.33em",
           "margin-top": "1.33em",
@@ -126,7 +126,7 @@ module.exports = {
           "font-family": "Trocchi, serif",
         },
 
-        "#postHtml h5": {
+        "#postHtml h5, #projectHtml h5": {
           display: "block",
           "font-size": "0.83em",
           "margin-top": "1.67em",
@@ -137,7 +137,7 @@ module.exports = {
           "font-family": "Trocchi, serif",
         },
 
-        "#postHtml h6": {
+        "#postHtml h6, #projectHtml h6": {
           display: "block",
           "font-size": "0.67em",
           "margin-top": "2.33em",
@@ -148,7 +148,7 @@ module.exports = {
           "font-family": "Trocchi, serif",
         },
 
-        "#postHtml ol": {
+        "#postHtml ol, #projectHtml ol": {
           display: "block",
           "list-style-type": "decimal",
           "margin-top": "1em",
@@ -158,7 +158,7 @@ module.exports = {
           "padding-left": "40px",
         },
 
-        "#postHtml ul": {
+        "#postHtml ul, #projectHtml ul": {
           display: "block",
           "list-style-type": "disc",
           "margin-top": "1em",
@@ -168,11 +168,11 @@ module.exports = {
           "padding-left": "40px",
         },
 
-        "#postHtml li": {
+        "#postHtml li, #projectHtml li": {
           display: "list-item",
         },
 
-        "#postHtml hr": {
+        "#postHtml hr, #projectHtml hr": {
           "border-color": "#84A59D",
           "border-width": "1px",
           width: "60%",
@@ -180,12 +180,12 @@ module.exports = {
           "margin-right": "auto",
         },
 
-        "#postHtml a": {
+        "#postHtml a, #projectHtml a": {
           color: "#84A59D",
           "text-decoration": "underline",
         },
 
-        "#postHtml blockquote": {
+        "#postHtml blockquote, #projectHtml blockquote": {
           display: "block",
           "margin-top": "1em",
           "margin-bottom": "1em",
