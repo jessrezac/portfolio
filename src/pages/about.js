@@ -23,7 +23,7 @@ function About(props) {
         <div className="md:flex-1">
           <h2 className="font-display text-center text-4xl pb-5">Why I Code</h2>
 
-          <div dangerouslySetInnerHTML={{ __html: page_body }} />
+          <div id="postHtml" dangerouslySetInnerHTML={{ __html: page_body }} />
         </div>
       </section>
     </Layout>

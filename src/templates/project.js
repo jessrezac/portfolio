@@ -76,11 +76,11 @@ export default function Project(props) {
           ></div>
 
           <div className="w-full flex justify-between items-center">
-            <Link to={`${prevProject.node.fields.slug}`}>
+            <Link to={`projects${prevProject.node.fields.slug}`}>
               &larr; {prevProject.node.frontmatter.title}
             </Link>
 
-            <Link to={`${nextProject.node.fields.slug}`}>
+            <Link to={`projects${nextProject.node.fields.slug}`}>
               {nextProject.node.frontmatter.title} &rarr;
             </Link>
           </div>
