@@ -52,8 +52,8 @@ export default function ProjectList(props) {
           <Project project={projects[projectIndex]} key={projectIndex} />
         ))}
       </div>
-      <div className="flex flex-wrap justify-center p-10">
-        <div className="max-w-1/2 align-middle">
+      <div className="flex flex-wrap justify-center p-10 space-x-20">
+        <div className="max-w-1/2 align-middle cursor-pointer">
           <FontAwesomeIcon
             icon={faArrowCircleLeft}
             onClick={handleLeftArrowClick}
@@ -61,7 +61,7 @@ export default function ProjectList(props) {
           />
         </div>
 
-        <div className="max-w-1/2">
+        <div className="max-w-1/2 cursor-pointer">
           <FontAwesomeIcon
             icon={faArrowCircleRight}
             onClick={handleRightArrowClick}
