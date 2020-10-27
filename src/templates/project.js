@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import useProjectData from "../static_queries/useProjectData"
 import SignUpForm from "./../components/SignUpForm"
 
@@ -76,13 +76,13 @@ export default function Project(props) {
           ></div>
 
           <div className="w-full flex justify-between items-center">
-            <Link to={`projects${prevProject.node.fields.slug}`}>
+            <a href={`../../projects${prevProject.node.fields.slug}`}>
               &larr; {prevProject.node.frontmatter.title}
-            </Link>
+            </a>
 
-            <Link to={`projects${nextProject.node.fields.slug}`}>
+            <a href={`../../projects${nextProject.node.fields.slug}`}>
               {nextProject.node.frontmatter.title} &rarr;
-            </Link>
+            </a>
           </div>
         </div>
       </article>
