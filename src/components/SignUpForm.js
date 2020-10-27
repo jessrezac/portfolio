@@ -22,7 +22,7 @@ export default function SignUpForm(props) {
   }
 
   return (
-    <>
+    <div className="w-full">
       <h2 className="font-display text-center text-4xl py-5">Get to Know Me</h2>
       <p className="font-sans text-xl pb-5">
         Twice a month, I curate a newsletter about coding. Expect content about{" "}
@@ -33,14 +33,14 @@ export default function SignUpForm(props) {
         <span className="shadowed font-bold">digital wellness</span>.
       </p>
       <form onSubmit={handleSubmit}>
-        <div className="flex flex-wrap xl:flex-no-wrap justify-between lg:space-x-2">
+        <div className="flex flex-wrap justify-around">
           <input
             type="text"
             name="EMAIL"
             placeholder="Email"
             id="Email"
             value={emailAddress}
-            className="w-full md:w-auto flex-auto border-2 border-baby-pink-100 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-baby-pink-300"
+            className="flex-1 border-2 border-baby-pink-100 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-baby-pink-300"
             onChange={e => setEmailAddress(e.target.value)}
           />
           <input
@@ -49,11 +49,11 @@ export default function SignUpForm(props) {
             placeholder="First Name"
             id="FNAME"
             value={firstName}
-            className="w-full md:w-auto flex-auto border-2 border-baby-pink-100 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-baby-pink-300"
+            className="flex-1 border-2 border-baby-pink-100 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-baby-pink-300"
             onChange={e => setFirstName(e.target.value)}
           />
           <input
-            className="w-full md:w-auto flex-none py-2 px-4 rounded bg-blue-yonder text-azure-x-100"
+            className="w-auto flex-initial py-2 px-4 rounded bg-blue-yonder text-azure-x-100 cursor-pointer"
             type="submit"
             value="Submit"
           />
@@ -71,6 +71,6 @@ export default function SignUpForm(props) {
           className="text-xs py-2"
         />
       )}{" "}
-    </>
+    </div>
   )
 }

@@ -3,7 +3,7 @@ import React from "react"
 function PageMast(props) {
   const { title, subtitle, intro } = props
   return (
-    <div className="flex">
+    <div className="flex max-w-screen-xl mx-auto">
       <div className="px-10 py-20">
         <div className="font-sans text-sans uppercase">{subtitle}</div>
         <h1 className="text-6xl font-display" id="identity">
