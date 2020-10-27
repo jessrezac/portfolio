@@ -87,7 +87,7 @@ export default function Project(props) {
         </div>
       </article>
 
-      <div className="bg-seashell w-3/5 p-10 mb-20 mx-auto rounded font-serif">
+      <div className="bg-seashell w-4/5 md:w-3/5 xl:w-2/5 p-10 mb-20 mx-auto rounded font-serif">
         <SignUpForm />
       </div>
     </Layout>
