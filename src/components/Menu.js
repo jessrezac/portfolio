@@ -43,7 +43,7 @@ export default function Menu(props) {
         <Link to="/blog" className="p-4">
           Blog
         </Link>
-        <a href="https://www.rezac.dev/resume" className="p-4">
+        <a href="https://www.rezac.dev/resume.pdf" className="p-4">
           Resume <FontAwesomeIcon icon="download" className="" />
         </a>
         <div className="text-4xl md:text-xl flex justify-around space-x-6 pr-5">
