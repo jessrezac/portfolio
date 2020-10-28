@@ -20,7 +20,7 @@ export default function Project(props) {
       </div>
       <div className="px-6 py-4">
         <div className="font-sans uppercase font-bold text-xl mb-2 text-center">
-          <a href={`projects${fields.slug}`}>{title}</a>
+          <a href={`../projects${fields.slug}`}>{title}</a>
         </div>
         <div className="font-sans text-center mb-2">
           <a href={github_url} className="shadowed">

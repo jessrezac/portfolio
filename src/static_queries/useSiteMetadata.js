@@ -7,6 +7,7 @@ export default function useSiteMetadata() {
         siteMetadata {
           title
           description
+          siteUrl
           infoData {
             callOutPhrase
             contact {
