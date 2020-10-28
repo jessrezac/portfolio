@@ -53,7 +53,12 @@ export default function Post(props) {
   }
 
   return (
-    <Layout page="post" title={frontmatter.title}>
+    <Layout
+      page="post"
+      title={frontmatter.title}
+      oGraphUrl={frontmatter.hero_image.publicURL}
+      slug={fields.slug}
+    >
       <article>
         <div className="py-20 w-full md:px-10 lg:px-20 max-w-screen-xl mx-auto">
           <figure>
@@ -117,6 +122,7 @@ export const getPostData = graphql`
               ...GatsbyImageSharpFluid
             }
           }
+          publicURL
         }
       }
       excerpt
