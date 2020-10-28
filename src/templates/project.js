@@ -51,7 +51,12 @@ export default function Project(props) {
   }
 
   return (
-    <Layout page="project" title={frontmatter.title}>
+    <Layout
+      page="project"
+      title={frontmatter.title}
+      oGraphUrl={frontmatter.hero_image.publicURL}
+      slug={fields.slug}
+    >
       <article>
         <div className="py-20 w-full md:px-10 lg:px-20 max-w-screen-xl mx-auto">
           <figure>
@@ -113,6 +118,7 @@ export const getProjectData = graphql`
               ...GatsbyImageSharpFluid
             }
           }
+          publicURL
         }
       }
       excerpt
