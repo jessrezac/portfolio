@@ -19,7 +19,7 @@ function Footer(props) {
           </p>
         </div>
         <div>
-          <div className="flex items-center justify-center space-x-12 mx-auto text-6xl">
+          <div className="flex items-center justify-center space-x-4 md:space-x-12 mx-auto text-xl md:text-6xl">
             <Socials />
           </div>
         </div>
