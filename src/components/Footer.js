@@ -7,9 +7,9 @@ function Footer(props) {
   const { siteTitle, siteDescription } = props
   return (
     <footer className="bg-gray-800 text-baby-pink-300 p-10 xl:px-0">
-      <div className="flex flex-wrap md:flex-no-wrap justify-around items-center max-w-screen-xl mx-auto">
-        <div className="pb-10 md:py-0 text-center md:text-left">
-          <img src={logo} alt={siteTitle} className="w-2/5 mx-auto md:mx-0" />
+      <div className="flex flex-wrap lg:flex-no-wrap justify-around items-center max-w-screen-xl mx-auto">
+        <div className="pb-10 lg:py-0 text-center lg:text-left">
+          <img src={logo} alt={siteTitle} className="w-2/5 mx-auto lg:mx-0" />
           <p className="font-display text-lg">{siteDescription}</p>
           <p>
             <a href="mailto:hello@rezac.dev" className="underline">
@@ -19,7 +19,7 @@ function Footer(props) {
           </p>
         </div>
         <div>
-          <div className="flex items-center justify-center space-x-4 md:space-x-12 mx-auto text-xl md:text-6xl">
+          <div className="flex items-center justify-center space-x-4 lg:space-x-12 mx-auto text-xl lg:text-6xl">
             <Socials />
           </div>
         </div>
