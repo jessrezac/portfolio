@@ -1,7 +1,7 @@
 ---
 posttype: blog
 title: Continuous Deployment of a Gatsby site to cPanel with Git Version Control
-date: 2020-11-01T14:00:00-06:00
+date: 2020-11-01T15:50:00-06:00
 author: Jess Rezac
 hero_image: "/content/images/git-version-control.png"
 kicker: "<p>Hosting a static site like one built in Gatsby on virtual shared hosting
@@ -113,7 +113,7 @@ $ git add .
 $ git commit -m "Update build"
 $ git push origin main
 $ git push cpanel main
-``` 
+```
 
 Git Version Control will show its progress in your terminal window as it completes the deployment:
 
@@ -146,6 +146,8 @@ remote:   status: 1
 remote:   warnings: ~
 To ssh://jlrezac.com/home/cranewif/repositories/gatsby-cpanel-deploy
    494f663..57b1676  main
- ```
- 
- Thanks!
+```
+
+In theory, you could also set up your cPanel remote in the `public` folder, but keep in mind that `gatsby build` erases the contents of the `public` folder every time it runs, so you would need to keep your `.cpanel.yml` file in the same directory as your Gatsby files and copy it along with `.gitignore` over each time you re-built your site. I'm interested in this solution, so if you try it, let me know how it works out for you!
+
+This is my first real post on Dev.to. I'm excited to hear what you think!
