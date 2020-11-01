@@ -70,7 +70,10 @@ export default function Post(props) {
 
           <div>
             <h1 className="text-6xl font-display pt-2">{frontmatter.title}</h1>
-            <h2 className="font-sans text-2xl italic">{frontmatter.kicker}</h2>
+            <h2
+              className="font-sans text-2xl italic"
+              dangerouslySetInnerHTML={{ __html: frontmatter.kicker }}
+            ></h2>
             <div className="font-sans uppercase text-xs py-2">
               {frontmatter.date} &bull; {timeToRead} minute read &bull;{" "}
               {wordCount.words} words

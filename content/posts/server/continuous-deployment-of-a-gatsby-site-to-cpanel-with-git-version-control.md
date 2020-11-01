@@ -21,15 +21,15 @@ To deploy a Gatsby site using cPanel, we'll need to build a Gatsby site, create 
 
 Begin by creating a Gatsby site, you can use Gatsby's [Quick Start guide](https://www.gatsbyjs.com/docs/quick-start/ "Gatsby Quick Start Guide") to get up and running pretty quickly. I started mine with [Melanie Nolan's Gatsby-Starter-Tailwind-CSS](https://www.gatsbyjs.com/starters/melanienolan/gatsby-starter-tailwind-css/ "gatsby-starter-tailwind-css").
 
-```zsh
-	gatsby new gatsby-cpanel-deploy https://github.com/melanienolan/gatsby-starter-tailwind-css
+```bash
+$ gatsby new gatsby-cpanel-deploy https://github.com/melanienolan/gatsby-starter-tailwind-css
 ```
 
 Test your installation with:
 
-```zsh
-    cd gatsby-cpanel-deploy
-    gatsby develop
+```bash
+$ cd gatsby-cpanel-deploy
+$ gatsby develop
 ```
 
 ## Define deployment instructions for cPanel
