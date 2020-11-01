@@ -19,3 +19,12 @@ fields:
 - type: file
   name: hero_image
   label: Hero Image
+- name: kicker
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Kicker
