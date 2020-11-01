@@ -3,8 +3,11 @@ posttype: blog
 title: Continuous Deployment of a Gatsby site to cPanel with Git Version Control
 date: 2020-11-01T14:00:00-06:00
 author: Jess Rezac
-hero_image: ''
-kicker: ''
+hero_image: "/content/images/git-version-control.png"
+kicker: "<p>Hosting a static site like one built in Gatsby on virtual shared hosting
+  server makes sense, but the solution doesn't have to rely on FTP to deploy changes
+  to the live site. See how to set up continuous deployment using cPanel's Git Version
+  Control.</p>"
 
 ---
 Last weekend, I launched my developer portfolio site at [www.rezac.dev](https://www.rezac.dev "rezac.dev"). I built the site in [Gatsby](https://www.gatsbyjs.com/ "Gatsby") because I was excited to play with a static-site generator and Gatsby is React-based. My last project, [Bout Manager](https://www.rezac.dev/projects/bout-manager "Bout Manager"), was built in React so choosing a React-based generator encouraged me to focus on mastering Gatsby specifically and [Tailwind CSS](https://tailwindcss.com/ "Tailwind CSS"), the two tools I was hoping this project would add to my repertoire.
@@ -110,5 +113,39 @@ $ git add .
 $ git commit -m "Update build"
 $ git push origin main
 $ git push cpanel main
-```
+``` 
 
+Git Version Control will show its progress in your terminal window as it completes the deployment:
+
+```bash
+Enumerating objects: 32, done.
+Counting objects: 100% (32/32), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (19/19), 15.08 KiB | 3.77 MiB/s, done.
+Total 19 (delta 11), reused 0 (delta 0)
+remote: Recieved update on checked-out branch, queueing deployment.
+remote: --- 
+remote: apiversion: 3
+remote: func: create
+remote: module: VersionControlDeployment
+remote: result: 
+remote:   data: 
+remote:     deploy_id: 17
+remote:     log_path: /home/cranewif/.cpanel/logs/vc_1604266002.21772_git_deploy.log
+remote:     repository_root: /home/cranewif/repositories/gatsby-cpanel-deploy
+remote:     sse_url: /sse/UserTasks/00000000_5f9f2812355a77/vc_1604266002.21772_git_deploy.log
+remote:     task_id: 00000000/5f9f2812355a77
+remote:     timestamps: 
+remote:       queued: '1604266002.23371'
+remote:   errors: ~
+remote:   messages: ~
+remote:   metadata: {}
+remote: 
+remote:   status: 1
+remote:   warnings: ~
+To ssh://jlrezac.com/home/cranewif/repositories/gatsby-cpanel-deploy
+   494f663..57b1676  main
+ ```
+ 
+ Thanks!
