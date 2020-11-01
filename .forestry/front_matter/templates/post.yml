@@ -28,3 +28,5 @@ fields:
     schema:
       format: html-blocks
   label: Kicker
+pages:
+- content/posts/server/continuous-deployment-of-a-gatsby-site-to-cpanel-with-git-version-control.md
