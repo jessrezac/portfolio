@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Rezac.dev's RSS Feed]]></title><description><![CDATA[Full Stack Software Engineer]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 01 Nov 2020 21:57:25 GMT</lastBuildDate><item><title><![CDATA[Continuous Deployment of a Gatsby site to cPanel with Git Version Control]]></title><description><![CDATA[<p>Hosting a static site like one built in Gatsby on virtual shared hosting server makes sense, but the solution doesn't have to rely on FTP to deploy changes to the live site. See how to set up continuous deployment using cPanel's Git Version Control.</p>]]></description><link>https://www.rezac.dev/server/continuous-deployment-of-a-gatsby-site-to-cpanel-with-git-version-control/</link><guid isPermaLink="false">https://www.rezac.dev/server/continuous-deployment-of-a-gatsby-site-to-cpanel-with-git-version-control/</guid><pubDate>Sun, 01 Nov 2020 21:50:00 GMT</pubDate><content:encoded>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Rezac.dev's RSS Feed]]></title><description><![CDATA[Full Stack Software Engineer]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 02 Nov 2020 03:01:42 GMT</lastBuildDate><item><title><![CDATA[Continuous Deployment of a Gatsby site to cPanel with Git Version Control]]></title><description><![CDATA[<p>Hosting a static site like one built in Gatsby on virtual shared hosting server makes sense, but the solution doesn't have to rely on FTP to deploy changes to the live site. See how to set up continuous deployment using cPanel's Git Version Control.</p>]]></description><link>https://www.rezac.dev/server/continuous-deployment-of-a-gatsby-site-to-cpanel-with-git-version-control/</link><guid isPermaLink="false">https://www.rezac.dev/server/continuous-deployment-of-a-gatsby-site-to-cpanel-with-git-version-control/</guid><pubDate>Sun, 01 Nov 2020 21:50:00 GMT</pubDate><content:encoded>
 Last weekend, I launched my developer portfolio site at [www.rezac.dev](https://www.rezac.dev &quot;rezac.dev&quot;). I built the site in [Gatsby](https://www.gatsbyjs.com/ &quot;Gatsby&quot;) because I was excited to play with a static-site generator and Gatsby is React-based. My last project, [Bout Manager](https://www.rezac.dev/projects/bout-manager &quot;Bout Manager&quot;), was built in React so choosing a React-based generator encouraged me to focus on mastering Gatsby specifically and [Tailwind CSS](https://tailwindcss.com/ &quot;Tailwind CSS&quot;), the two tools I was hoping this project would add to my repertoire.
 
 When it came time to deploy my site, I decided to stick with the virtual shared hosting account I&apos;ve had for more than a decade. My portfolio is likely to be deployed for a long time, so I couldn&apos;t really justify spinning it out in a different cloud-based location than all of the other websites I host and manage. There is plenty of time for me to familiarize myself with cloud-based deployment solutions.
@@ -22,7 +22,7 @@ $ gatsby develop
 
 ## Define deployment instructions for cPanel
 
-Next, create a `.cpanel.yml` file in your project directory with deployment instructions.
+Next, create a `html•.cpanel.yml` file in your project directory with deployment instructions.
 
 ```yaml
 ---
@@ -33,48 +33,48 @@ deployment:
 ```
 
 - Line 1 is the beginning of a YAML file.
-- Lines 2 and 3 add `deployment` and `tasks` keys.
+- Lines 2 and 3 add `html•deployment` and `html•tasks` keys.
 - Line 4 begins a list of BASH commands that run during deployment.
 
-The first BASH command defines a variable, `DEPLOYPATH` that holds the path on our server where deployed files will be located.
+The first BASH command defines a variable, `html•DEPLOYPATH` that holds the path on our server where deployed files will be located.
 
-Replace `&lt;userName&gt;` with your account username and `&lt;public_html&gt;` with the location of your files in your site directory. For many deployment cases, this is likely to be `public_html`, but I am deploying to a subfolder of a subdomain on an add-on domain within my account, so my path will be to `demos.rezac.dev/gatsby-cpanel-deploy`.
+Replace `html•&lt;userName&gt;` with your account username and `html•&lt;public_html&gt;` with the location of your files in your site directory. For many deployment cases, this is likely to be `html•public_html`, but I am deploying to a subfolder of a subdomain on an add-on domain within my account, so my path will be to `html•demos.rezac.dev/gatsby-cpanel-deploy`.
 
-The second BASH command deploys a specified file or directory to the directory defined in `$DEPLOYPATH`. When you run `gatsby build`, Gatsby will automatically write all files to the `public/` folder, so `public/*` deploys all files in that directory.
+The second BASH command deploys a specified file or directory to the directory defined in `html•$DEPLOYPATH`. When you run `bash•gatsby build`html•, Gatsby will automatically write all files to the `html•public/` folder, so `html•public/*` deploys all files in that directory.
 
 ## Build your Gatsby site
 
-Run `gatsby build` to create your site&apos;s build files and `public` folder and `gatsby serve` to check your build.
+Run `bash•gatsby build` to create your site&apos;s build files and `html•public` folder and `html•gatsby serve` to check your build.
 
-Push changes to your repo. By default, many Gatsby starters add `public` to `.gitignore`, so you&apos;ll need to remove it for Git Version Control to eventually be able to access those files from your repo.
+Push changes to your repo. By default, many Gatsby starters add `html•public` to `html•.gitignore`, so you&apos;ll need to remove it for Git Version Control to eventually be able to access those files from your repo.
 
 ## Set up Git Version Control
 
-With deployment instructions defined in `.cpanel.yml` and the site&apos;s build pushed to our GitHub repository, we&apos;re ready to set up a second remote repository in cPanel using Git Version Control.
+With deployment instructions defined in `html•.cpanel.yml` and the site&apos;s build pushed to our GitHub repository, we&apos;re ready to set up a second remote repository in cPanel using Git Version Control.
 
-- First, grab your GitHub repository clone URL from your repo on GitHub by clicking the `Code` button and copying the URL. I prefer to use the HTTPS URL.
-- Next, go go to `Git Version Control` from cPanel and click the `Create` button.
+- First, grab your GitHub repository clone URL from your repo on GitHub by clicking the `html•Code` button and copying the URL. I prefer to use the HTTPS URL.
+- Next, go go to `html•Git Version Control` from cPanel and click the `html•Create` button.
 - Enable the toggle to clone a repository.
 - Enter your copied clone URL in the clone URL field.
-- Enter a path for repostiroy directory. I store mine in a directory named after the GitHub repository in a `repositories` directory in my site files.
+- Enter a path for repostiroy directory. I store mine in a directory named after the GitHub repository in a `html•repositories` directory in my site files.
 - Enter a respository name.
-- Click `Create`.
+- Click `html•Create`.
 
 ## Deploy from Git Version Control
 
-To deploy for the first time, click the `Manage` button next to your new repo in the repositories list in Git Version Control.
+To deploy for the first time, click the `html•Manage` button next to your new repo in the repositories list in Git Version Control.
 
-Click the `Pull or Deploy` tab and then the `Deploy HEAD Commit` button.
+Click the `html•Pull or Deploy` tab and then the `html•Deploy HEAD Commit` button.
 
 Git Version Control will immediately queue the deployment and will add Last Deployment Information when the deployment is complete.
 
 ## Set up continuous deployment to Git Version Control in your local repository
 
-As you push changes to your repository on GitHub, you can return to the `Pull or Deploy` tab for your repository in Git Version Control and click `Update from Remote` followed by `Deploy HEAD Commit` to make changes live on your site.
+As you push changes to your repository on GitHub, you can return to the `html•Pull or Deploy` tab for your repository in Git Version Control and click `html•Update from Remote` followed by `html•Deploy HEAD Commit` to make changes live on your site.
 
 This may feel too cumbersome as it requires pushing changes to GitHub, logging in to cPanel, and manually starting two processes before changes are live. An easier solution would be to set up a continuous deployment pipeline in your local repository, and with Git Version Control this is possible.
 
-Copy the clone URL for your Git Version Control repo from the repo&apos;s `Basic Information` tab.
+Copy the clone URL for your Git Version Control repo from the repo&apos;s `html•Basic Information` tab.
 
 In your local repository, run:
 
@@ -82,7 +82,7 @@ In your local repository, run:
 $ git remote add &lt;remoteName&gt; &lt;cloneUrl&gt;
 ```
 
-where `&lt;remoteName&gt;` is a unique name for your new remote – I usually name this remote `cpanel` whereas the GitHub remote is named `origin` – and `&lt;cloneUrl&gt;` is the clone URL you coppied from Git Version Control.
+where `html•&lt;remoteName&gt;` is a unique name for your new remote – I usually name this remote `html•cpanel` whereas the GitHub remote is named `html•origin` – and `html•&lt;cloneUrl&gt;` is the clone URL you coppied from Git Version Control.
 
 You can check if the command has worked using `git remote -v` which will list your established remotes.
 
@@ -137,7 +137,7 @@ To ssh://jlrezac.com/home/cranewif/repositories/gatsby-cpanel-deploy
    494f663..57b1676  main
 ```
 
-In theory, you could also set up your cPanel remote in the `public` folder, but keep in mind that `gatsby build` erases the contents of the `public` folder every time it runs, so you would need to keep your `.cpanel.yml` file in the same directory as your Gatsby files and copy it along with `.gitignore` over each time you re-built your site. I&apos;m interested in this solution, so if you try it, let me know how it works out for you!
+In theory, you could also set up your cPanel remote in the `html•public` folder, but keep in mind that `html•gatsby build` erases the contents of the `html•public` folder every time it runs, so you would need to keep your `html•.cpanel.yml` file in the same directory as your Gatsby files and copy it along with `html•.gitignore` over each time you re-built your site. I&apos;m interested in this solution, so if you try it, let me know how it works out for you!
 
 This is my first real post on Dev.to. I&apos;m excited to hear what you think!
 </content:encoded></item><item><title><![CDATA[Filling Sandboxes]]></title><description><![CDATA[As I lean into learning a new skill, I'm re-learning how to be a student.]]></description><link>https://www.rezac.dev/personal/filling-sandboxes/</link><guid isPermaLink="false">https://www.rezac.dev/personal/filling-sandboxes/</guid><pubDate>Thu, 30 May 2019 22:40:32 GMT</pubDate><content:encoded>

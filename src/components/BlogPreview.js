@@ -5,7 +5,7 @@ export default function BlogPreview(props) {
   return (
     <article className="max-w-screen md:w-3/5 mx-auto text-left pb-10">
       <div className="font-display font-bold text-2xl">
-        <a href={`.${fields.slug}`}>{frontmatter.title}</a>
+        <a href={`..${fields.slug}`}>{frontmatter.title}</a>
       </div>
       <div className="font-sans uppercase text-xs py-2">
         {frontmatter.date} &bull; {timeToRead} minutes to read &bull;{" "}
@@ -16,7 +16,7 @@ export default function BlogPreview(props) {
         dangerouslySetInnerHTML={{ __html: frontmatter.kicker }}
       />
       <div>
-        <a href={`.${fields.slug}`} className="font-serif underline">
+        <a href={`..${fields.slug}`} className="font-serif underline">
           Read More
         </a>
       </div>

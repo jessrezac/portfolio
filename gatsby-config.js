@@ -162,6 +162,7 @@ module.exports = {
               theme: "Monokai Dimmed", // Or install your favorite theme from GitHub
               inlineCode: {
                 marker: "•",
+                language: "html",
               },
             },
           },
