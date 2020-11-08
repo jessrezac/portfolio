@@ -30,3 +30,4 @@ fields:
   label: Kicker
 pages:
 - content/posts/server/continuous-deployment-of-a-gatsby-site-to-cpanel-with-git-version-control.md
+- content/posts/setting-up-gatsby-for-social-media-sharability.md
