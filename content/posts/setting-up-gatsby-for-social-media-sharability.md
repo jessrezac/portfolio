@@ -7,18 +7,72 @@ hero_image: "/content/images/screenshot-twitter-post-with-link.jpg"
 kicker: "<p>Resources</p>"
 
 ---
-Whether you are working on your own portfolio or project or designing something to be client-facing, a goal of a front-end project should be attract the right audience to your website. You can expect people to find your website in one of three ways: 
+Whether you are writing content for your own portfolio or developing a website for a client, websites are essentially marketing collateral. Therefore, all websites implicitly have a goal of attracting the right audience for whatever it is they're marketing.
 
-* Search
-* Paid Advertising
-* Content Marketing
+I'm transitioning into full-stack web developer roles now, but in my current career station, I'm a mid-career digital marketer. As I've learned Javascript and Ruby, I'm often surprised by how little about optimization for search engines and social sharing are part of tutorials.
 
-With a little bit of search engine optimization, you can help your website to have a share of the search results for given terms. If your audience knows your name, search is fairly straight-forward. For example, searching for "Jess Rezac" will help you find me. If your audience can identify that they have the need you solve, some simple SEO (search engine optimization) on your site will help them connect to you.
+For example, when I worked on [Daily Practice](https://www.rezac.dev/projects/daily-practice "Daily Practice"), my mindful journalling app built in Sinatra, I had to figure out how to pass a title meta tag to the template for the various pages of my site, because it felt too weird to me to leave it out.
 
-If you have a budget for it, paid advertising takes you even further. Now, you can make sure you're seen when people search directly for your competitors or that people find you by searching for a solution to a problem they have in a saturated industry. 
+SEO (search engine optimization) helps ensure that your page gets some share of voice for relevant search terms. That's fairly easy when someone knows who or what brand they are looking for – say "Jess Rezac" – and a little more challenging when someone only knows the need they're looking to have solved – say "Web Developer near me."
 
-This is why SEO/social share optimization is important.
+Optimizing a page for social sharing is more about creating the aesthetic or brand that you desire so that your content stands out when you or a reader shares it to social media.
 
-This is how to do it in gatsby
+## Social Share Optimization In Gatsby
 
-These are resources
+Social media sites use meta tags provided by a webpage to determine what content should appear as the page title, description, link and image in a linked post.
+
+My portfolio is built in Gatsby so I'm using `React Helmet` to add meta tags between the `<head>` tags on my articles and pages.
+
+To install React Helmet as a Gatsby plugin, install `gatsby-plugin-react-helmet` and `react-helmet`:
+
+```shell
+npm install gatsby-plugin-react-helmet react-helmet
+```
+
+Then, add the plugin to your `plugins` array in `gatsby-config.js`:
+
+    {
+      plugins: [`gatsby-plugin-react-helmet`]
+    }
+
+`React Helmet` gives you a `<Helmet>` component that passes its children as changes to the document head.
+
+```jsx
+import React from "react"
+import { Helmet } from "react-helmet"
+
+function Layout(props) {
+  const { title, description, oGraphUrl } = props
+
+  return (
+    <div id="application">
+      <Helmet>
+        <meta
+          property="og:title"
+          content={title}`}
+        />
+        <meta property="og:description" content={description} />
+        <meta
+          property="og:image"
+          content={
+            !oGraphUrl || oGraphUrl === ""
+              ? `${siteUrl}/rezacdev.png`
+              : `${siteUrl}${oGraphUrl}`
+          }
+        />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta
+          name="twitter:image"
+          content={
+            !oGraphUrl || oGraphUrl === ""
+              ? `${siteUrl}/rezacdev.png`
+              : `${siteUrl}${oGraphUrl}`
+          }
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+    </div>
+  )
+};
+```
