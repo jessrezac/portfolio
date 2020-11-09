@@ -1,12 +1,12 @@
 ---
 posttype: post
-title: Setting Up Gatsby for Social Media Sharability
+title: Setting Up Gatsby for Social Media Optimization
 date: 2020-11-08T14:00:00-06:00
 author: Jess Rezac
 hero_image: "/content/images/screenshot-twitter-post-with-link.jpg"
 kicker: "<p>Resources</p>"
-
 ---
+
 Whether you are writing content for your own portfolio or developing a website for a client, websites are essentially marketing collateral. Therefore, all websites implicitly have a goal of attracting the right audience for whatever it is they're marketing.
 
 I'm transitioning into full-stack web developer roles now, but in my current career station, I'm a mid-career digital marketer. As I've learned Javascript and Ruby, I'm often surprised by how little about optimization for search engines and social sharing are part of tutorials.
