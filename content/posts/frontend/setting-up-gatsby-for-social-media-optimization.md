@@ -4,9 +4,7 @@ title: Setting Up Gatsby for Social Media Optimization
 date: 2020-11-08T14:00:00-06:00
 author: Jess Rezac
 hero_image: "/content/images/screenshot-twitter-post-with-link.jpg"
-kicker:
-  "<p>Optimizing a page or post for social sharing helps your content stand out when shared to social media.
-  </p>"
+kicker: "<p>Optimizing a page or post for social sharing helps your content stand out in a social media feed.</p>"
 ---
 
 Whether you are writing content for your own portfolio or developing a website for a client, websites are essentially marketing collateral. Therefore, all websites implicitly have a goal of attracting the right audience for whatever it is they're marketing.
