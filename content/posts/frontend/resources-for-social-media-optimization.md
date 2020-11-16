@@ -7,7 +7,7 @@ hero_image: ''
 kicker: ''
 
 ---
-As I wrote last week, social media optimization is an important component of a content marketing strategy designed to reach your website's target audience.
+[Social media optimization is an important component of a content marketing strategy](https://rezac.dev/frontend/setting-up-gatsby-for-social-media-optimization/ "Setting Up Gatsby for Social Media Optimization") designed to reach your website's target audience.
 
 Here are some tools I like to create images to appear in social media links to your content:
 
@@ -15,4 +15,4 @@ Here are some tools I like to create images to appear in social media links to y
 
 Social media platforms change their ideal image sizes for linked posts more often than you'd think.
 
-Sprout Social's Always Up-to-Date Guide to Social Media Image Sizes
+Sprout Social's [Always Up-to-Date Guide to Social Media Image Sizes](https://sproutsocial.com/insights/social-media-image-sizes-guide/ "Always Up-to-Date Guide to Social Media Image Sizes") is a helpful bookmark to make sure that the sizes you're using are the best choice.
