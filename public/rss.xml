@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Rezac.dev's RSS Feed]]></title><description><![CDATA[Full Stack Software Engineer]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 11 Nov 2020 01:07:31 GMT</lastBuildDate><item><title><![CDATA[Setting Up Gatsby for Social Media Optimization]]></title><description><![CDATA[<p>Optimizing a page or post for social sharing helps your content stand out in a social media feed.</p>]]></description><link>https://www.rezac.dev/frontend/setting-up-gatsby-for-social-media-optimization/</link><guid isPermaLink="false">https://www.rezac.dev/frontend/setting-up-gatsby-for-social-media-optimization/</guid><pubDate>Sun, 08 Nov 2020 20:00:00 GMT</pubDate><content:encoded>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Rezac.dev's RSS Feed]]></title><description><![CDATA[Full Stack Software Engineer]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 16 Nov 2020 04:59:52 GMT</lastBuildDate><item><title><![CDATA[Resources for Social Media Optimization]]></title><description><![CDATA[<p>These are some of my favorite tools for generating open graph images to appear with links on social media.</p>]]></description><link>https://www.rezac.dev/frontend/resources-for-social-media-optimization/</link><guid isPermaLink="false">https://www.rezac.dev/frontend/resources-for-social-media-optimization/</guid><pubDate>Mon, 16 Nov 2020 00:00:00 GMT</pubDate><content:encoded>[Social media optimization is an important component of a content marketing strategy](https://rezac.dev/frontend/setting-up-gatsby-for-social-media-optimization/ &quot;Setting Up Gatsby for Social Media Optimization&quot;) designed to reach your website&apos;s target audience.
+
+Here are some tools I like to create images to appear in social media links to your content:
+
+## Be confident about ideal image sizes with Sprout Social
+
+Social media platforms change their ideal image sizes for linked posts more often than you&apos;d think.
+
+Sprout Social&apos;s [Always Up-to-Date Guide to Social Media Image Sizes](https://sproutsocial.com/insights/social-media-image-sizes-guide/ &quot;Always Up-to-Date Guide to Social Media Image Sizes&quot;) is a helpful bookmark to make sure that the sizes you&apos;re using are the best choice.
+
+## Create images from stock photos with Buffer&apos;s Pablo
+
+[Pablo, a tool by Buffer](https://pablo.buffer.com &quot;Pablo&quot;), creates correctly sized images easily. It remixes stock images (or your own upload) with text and a contrast filter to make text legible. When you have your design, you can resize it for different platforms. 
+
+## Resize your own images with Landscape by Sprout Social
+
+If you have an image already and don&apos;t want or need to overlay text, [Sprout Social&apos;s Landscape]() lets you resize images for social media platforms. This offers more sizes than Pablo and can be great if you&apos;re resizing for several platforms because it appends a suffix to your file that makes it really easy to find. 
+
+## Generate images automatically with the Open Graph Images Gatsby Plugin
+
+If you&apos;re over the headache of it, the [Gatsby plugin Open Graph Images](https://www.gatsbyjs.com/plugins/gatsby-plugin-open-graph-images/ &quot;https://www.gatsbyjs.com/plugins/gatsby-plugin-open-graph-images/&quot;) will generate an image directly from your React Components. </content:encoded></item><item><title><![CDATA[Setting Up Gatsby for Social Media Optimization]]></title><description><![CDATA[<p>Optimizing a page or post for social sharing helps your content stand out in a social media feed.</p>]]></description><link>https://www.rezac.dev/frontend/setting-up-gatsby-for-social-media-optimization/</link><guid isPermaLink="false">https://www.rezac.dev/frontend/setting-up-gatsby-for-social-media-optimization/</guid><pubDate>Sun, 08 Nov 2020 20:00:00 GMT</pubDate><content:encoded>
 Whether you are writing content for your own portfolio or developing a website for a client, websites are essentially marketing collateral. Therefore, all websites implicitly have a goal of attracting the right audience for whatever it is they&apos;re marketing.
 
 I&apos;m transitioning into full-stack web developer roles now, but in my current career station, I&apos;m a mid-career digital marketer. As I&apos;ve learned Javascript and Ruby, I&apos;m often surprised by how little about optimization for search engines and social sharing are part of tutorials.
