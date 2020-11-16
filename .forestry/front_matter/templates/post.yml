@@ -29,5 +29,5 @@ fields:
       format: html-blocks
   label: Kicker
 pages:
+- content/posts/frontend/resources-for-social-media-optimization.md
 - content/posts/server/continuous-deployment-of-a-gatsby-site-to-cpanel-with-git-version-control.md
-- content/posts/setting-up-gatsby-for-social-media-sharability.md
