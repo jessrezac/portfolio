@@ -4,7 +4,8 @@ export default function useBlogData() {
   const data = useStaticQuery(graphql`
     query getBlogData {
       allMarkdownRemark(
-        filter: { frontmatter: { posttype: { in: ["post"] } } }
+        filter: { frontmatter: { posttype: { in: "post" } } }
+        sort: { fields: frontmatter___date, order: DESC }
       ) {
         edges {
           node {
