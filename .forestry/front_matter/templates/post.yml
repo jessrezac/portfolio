@@ -30,5 +30,6 @@ fields:
   label: Kicker
 pages:
 - content/posts/frontend/resources-for-social-media-optimization.md
+- content/posts/frontend/understanding-maps-in-javascript.md
 - content/posts/productivity/organizing-notes-for-coding-bootcamp.md
 - content/posts/server/continuous-deployment-of-a-gatsby-site-to-cpanel-with-git-version-control.md
