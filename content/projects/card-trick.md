@@ -6,17 +6,18 @@ github_url: https://github.com/jessrezac/card-trick
 demo: https://www.loom.com/share/c7ef9ecf0ac647e8a5d34fec17b3b793
 posttype: project
 skills:
-- Ruby
-- Javascript
-- HTML
-- CSS
-kicker: Card Trick creates clean and simple flashcards, automatically, from Google
+  - Ruby
+  - Javascript
+  - HTML
+  - CSS
+kicker:
+  Card Trick creates clean and simple flashcards, automatically, from Google
   Docs. Built using Ruby on Rails with help from Google Drive API and Google File
   Picker API.
 hero_image: "/content/images/card-trick.png"
-
 ---
-Card Trick is a web application written in Ruby on Rails that creates clean and simple flash cards, automatically, using comments in Google Drive. The idea for this project came from my husband, Kyle Rezac-Dennis who was completing a UX certification, studying flashcard apps. In his research with current undergraduates, law students, and med school applicants who had recently studied for the MCAT, he learned that while there are some flash card apps that are good, students don’t like creating their own flash cards when they have already spent a lot of time working on notes and outlines for their courses. As we discussed the project, I realized the Google Drive API would allow someone to access highlighted text and comments in a Google Doc which could then be generated into a flashcard.
+
+Card Trick is a web application written in Ruby on Rails that creates clean and simple flash cards, automatically, using comments in Google Drive. The idea for this project came from my husband who was studying flashcard apps while completing a UX certification. In his research with current undergraduates, law students, and med school applicants who had recently studied for the MCAT, he learned that while there are some flash card apps that are good, students don’t like creating their own flash cards when they have already spent a lot of time working on notes and outlines for their courses. As we discussed the project, I realized the Google Drive API would allow someone to access highlighted text and comments in a Google Doc which could then be generated into a flashcard.
 
 ## Planning
 
