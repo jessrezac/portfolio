@@ -24,6 +24,7 @@ sections:
   create: all
   match: "**/*"
   templates:
+  - landing-page
   - internal-page
 - type: heading
   label: Pages
