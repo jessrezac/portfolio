@@ -14,3 +14,15 @@ fields:
       file: content/data/info.json
       path: contact
   label: Background
+- name: font
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: site-info
+      file: content/data/info.json
+      path: contact
+  label: Font
