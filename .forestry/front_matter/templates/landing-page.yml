@@ -8,3 +8,17 @@ fields:
   config:
     required: false
   label: Title
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: Subtitle
+- name: intro
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html
+  label: Intro
