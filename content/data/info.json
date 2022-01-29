@@ -8,5 +8,14 @@
     "devto_handle": "cheerupemodev",
     "kofi_handle": "cheerupemodev"
   },
-  "bio": "<p>I'm a full stack <strong>software engineer</strong> who started coding as a teenager who needed her online diary to have a certain aesthetic. My career brought me back to web development when I started asking <em>&rdquo;How do you experience a museum digitally?&ldquo;</em> as director of digital engagement at the American Jazz Museum in Kansas City, Mo.</p>"
+  "bio": "<p>I'm a full stack <strong>software engineer</strong> who started coding as a teenager who needed her online diary to have a certain aesthetic. My career brought me back to web development when I started asking <em>&rdquo;How do you experience a museum digitally?&ldquo;</em> as director of digital engagement at the American Jazz Museum in Kansas City, Mo.</p>",
+  "colors": {
+    "primary": "#234111",
+    "secondary": "#F9E0DC",
+    "tertiary": "#3D5D29",
+    "secondaryAlt": "#F1807E",
+    "tertiaryAlt": "#2A4D14",
+    "light": "#FAF2EB",
+    "dark": "#112008"
+  }
 }
