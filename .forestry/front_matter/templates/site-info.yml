@@ -1,0 +1,32 @@
+---
+label: Site Info
+hide_body: true
+fields:
+- type: text
+  name: callOutPhrase
+  label: callOutPhrase
+- type: field_group
+  name: contact
+  label: contact
+  fields:
+  - type: text
+    name: email
+    label: email
+  - type: text
+    name: twitter_handle
+    label: twitter_handle
+  - type: text
+    name: github_handle
+    label: github_handle
+  - type: text
+    name: linkedin_handle
+    label: linkedin_handle
+  - type: text
+    name: devto_handle
+    label: devto_handle
+  - type: text
+    name: kofi_handle
+    label: kofi_handle
+- type: textarea
+  name: bio
+  label: bio
