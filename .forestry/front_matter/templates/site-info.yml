@@ -44,6 +44,53 @@ fields:
     config:
       required: false
       color_format: Hex
+  - name: color_selection
+    type: field_group
+    config: {}
+    fields:
+    - name: primary
+      type: color
+      label: Primary
+      config:
+        required: false
+        color_format: Hex
+    - name: secondary
+      type: color
+      label: Secondary
+      config:
+        required: false
+        color_format: Hex
+    - name: tertiary
+      type: color
+      label: Tertiary
+      config:
+        required: false
+        color_format: Hex
+    - name: secondaryAlt
+      type: color
+      label: Secondary Alternate
+      config:
+        required: false
+        color_format: Hex
+    - name: tertiaryAlt
+      type: color
+      label: Tertiary Alternate
+      config:
+        required: false
+        color_format: Hex
+    - name: white
+      type: color
+      label: White
+      config:
+        required: false
+        color_format: Hex
+    - name: black
+      type: color
+      label: Black
+      config:
+        required: false
+        color_format: Hex
+    label: Color Selection
   config:
     min: 1
     max: 
