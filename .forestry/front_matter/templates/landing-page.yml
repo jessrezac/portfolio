@@ -1,4 +1,10 @@
 ---
 label: Landing Page
 hide_body: true
-fields: []
+display_field: title
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
