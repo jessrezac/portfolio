@@ -49,3 +49,5 @@ fields:
     max: 
     labelField: name
   label: Colors
+pages:
+- content/data/info.json
