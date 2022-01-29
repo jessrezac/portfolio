@@ -27,3 +27,5 @@ fields:
   config: {}
   template: snippet-color-config
   label: Color Config
+pages:
+- content/pages/home.md
