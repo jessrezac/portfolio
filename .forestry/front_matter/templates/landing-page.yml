@@ -22,3 +22,8 @@ fields:
     schema:
       format: html
   label: Intro
+- name: colorConfig
+  type: include
+  config: {}
+  template: snippet-color-config
+  label: Color Config
