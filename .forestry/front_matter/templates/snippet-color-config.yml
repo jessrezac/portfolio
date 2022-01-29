@@ -1,4 +1,16 @@
 ---
 label: Snippet - Color Config
 hide_body: true
-fields: []
+fields:
+- name: background
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: site-info
+      file: content/data/info.json
+      path: contact
+  label: Background
