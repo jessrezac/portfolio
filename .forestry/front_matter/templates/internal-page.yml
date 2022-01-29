@@ -1,0 +1,19 @@
+---
+label: Internal Page
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: subtitle
+  label: subtitle
+- type: textarea
+  name: intro
+  label: intro
+- type: textarea
+  name: page_body
+  label: page_body
+- type: text
+  name: colors
+  label: colors
